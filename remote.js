@@ -1,6 +1,6 @@
 function autocheck(vers){
 		$.getJSON({
-			url: 'http://tjuapp.z7.web.core.windows.net/update.json',
+			url: 'https://app.tjugate.top/update.json',
 			type: "get",
 			dataType: "json",
 			cache:false,
@@ -31,7 +31,7 @@ function autocheck(vers){
 }
 function mycheck(vers){
 		$.getJSON({
-			url: 'http://tjuapp.z7.web.core.windows.net/update.json',
+			url: 'https://app.tjugate.top/update.json',
 			type: "get",
 			dataType: "json",
 			cache:false,
