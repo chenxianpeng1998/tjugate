@@ -8,8 +8,8 @@ function autocheck(vers) {
 			if (compareVersion(vers, data.version) == -1) {
 				{
 					document.getElementById('pop_tit').innerHTML = "可用更新";
-					document.getElementById('pop_con').innerHTML = "有可用更新：" + vers + "→" + data.version +
-						"\n是否下载更新？";
+					document.getElementById('pop_con').innerHTML = "有可用更新：" + vers + " → " + data.version +
+						"</br>是否下载更新版本？";
 					yes_btn.onclick = function() {
 						function plusReady() {
 							plus.webview.create(data.link, 'downapk', {
@@ -26,30 +26,12 @@ function autocheck(vers) {
 						} else {
 							document.addEventListener('plusready', plusReady, false);
 						}
-						document.getElementById('darkbackground_alert').style.display = "none";
+						document.getElementById('darkbackground').style.display = "none";
 					}
 					close_btn.onclick = function() {
-						document.getElementById('darkbackground_alert').style.display = "none";
+						document.getElementById('darkbackground').style.display = "none";
 					}
-					document.getElementById('darkbackground_alert').style.display = "block";
-				}
-				var r = confirm("有可用更新：" + vers + "→" + data.version + "\n是否下载更新？")
-				if (r == true) {
-					function plusReady() {
-						plus.webview.create(data.link, 'downapk', {
-							backButtonAutoControl: 'close',
-							height: '0px',
-							width: '0px',
-							opacity: 0
-						});
-						plus.webview.show('downapk');
-						plus.webview.hide('downapk');
-					}
-					if (window.plus) {
-						plusReady();
-					} else {
-						document.addEventListener('plusready', plusReady, false);
-					}
+					document.getElementById('darkbackground').style.display = "block";
 				}
 			};
 		},
@@ -81,7 +63,6 @@ function mycheck(vers) {
 				}
 				document.getElementById('darkbackground_alert').style.display = "block";
 			};
-			window.location.reload();
 		},
 		error: function(msg) {
 			document.getElementById('pop_tit_alert').innerHTML = "更新异常";
