@@ -59,7 +59,7 @@ function mycheck(vers) {
 				document.getElementById('darkbackground_alert').style.visibility = "visible";
 				document.getElementById('darkbackground_alert').style.opacity = "1";
 			};
-			if (compareVersion(vers, data.version) == 1) {
+			else if (compareVersion(vers, data.version) == 1) {
 				document.getElementById('pop_tit_alert').innerHTML = "无可用更新";
 				document.getElementById('pop_con_alert').innerHTML = "当前为测试版本！";
 				yes_btn_alert.onclick = function() {
@@ -70,6 +70,7 @@ function mycheck(vers) {
 				document.getElementById('darkbackground_alert').style.visibility = "visible";
 				document.getElementById('darkbackground_alert').style.opacity = "1";
 			};
+			else window.location.reload();
 		},
 		error: function(msg) {
 			document.getElementById('pop_tit_alert').innerHTML = "更新异常";
