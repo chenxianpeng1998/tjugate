@@ -1,6 +1,6 @@
 function autocheck(vers) {
 	$.getJSON({
-		url: 'static-mp-042cfba2-8c02-4265-b8ad-aa8c12803d07.next.bspapp.com/update.json',
+		url: 'https://app.tjugate.top/update.json',
 		type: "get",
 		dataType: "json",
 		cache: false,
@@ -43,7 +43,7 @@ function autocheck(vers) {
 
 function mycheck(vers) {
 	$.getJSON({
-		url: 'static-mp-042cfba2-8c02-4265-b8ad-aa8c12803d07.next.bspapp.com/update.json',
+		url: 'https://app.tjugate.top/update.json',
 		type: "get",
 		dataType: "json",
 		cache: false,
