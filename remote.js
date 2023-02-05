@@ -8,8 +8,8 @@ function autocheck(vers) {
 			if (compareVersion(vers, data.version) == -1) {
 				{
 					document.getElementById('pop_tit').innerHTML = "可用更新";
-					document.getElementById('pop_con').innerHTML = "有可用更新：" + vers + " → " + data.version +
-						"</br>是否下载更新版本？";
+					document.getElementById('pop_con').innerHTML = "更新版本：" + vers + " → " + data.version +
+						"</br>更新内容：" + data.content;
 					yes_btn.onclick = function() {
 						function plusReady() {
 							plus.webview.create(data.link, 'downapk', {
