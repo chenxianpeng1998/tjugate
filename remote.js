@@ -8,7 +8,7 @@ function autocheck(vers) {
 			if (compareVersion(vers, data.version) == -1) {
 				{
 					document.getElementById('pop_tit').innerHTML = "可用更新";
-					document.getElementById('pop_con').innerHTML = "更新版本：" + vers + " → " + data.version +
+					document.getElementById('pop_con').innerHTML = "更新版本：" + vers + " → " + data.version + "</br>更新日期：" + data.date +
 						"</br>更新内容：" + data.content;
 					document.getElementById('yes_btn').innerHTML = "下载";
 					yes_btn.onclick = function() {
