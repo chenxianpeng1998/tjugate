@@ -1,0 +1,47 @@
+
+.page-header-inner{
+    background-image: url('./logo_bg_all.jpg') !important;
+    background-size: cover;
+}
+
+.page-header-inner .back-page{
+    color: #fff !important;
+}
+
+.page-header.navbar .top-menu .navbar-nav>li.dropdown .dropdown-toggle>i{
+    color: #fff300 !important;
+}
+
+
+.logo-indigo .page-header.navbar .page-logo img{
+    display:none !important;
+}
+
+/*.logo-indigo .page-header.navbar .page-logo:after{*/
+/*    content: "";*/
+/*    height: 40px;*/
+/*    display: block;*/
+/*    clear: both;*/
+/*    width: 272px;*/
+/*    overflow: hidden;*/
+/*    background-image: url('./logo_01.png');*/
+/*    background-size: cover;*/
+/*}*/
+
+
+.page-footer{
+    background-image: url('./buttom_bg.png');
+    background-size: cover;
+}
+
+.page-footer .page-item .page-item-fa{
+    color: #e72e2e;
+}
+
+.page-footer .page-item .page-item-title{
+    color: #e72e2e;
+}
+
+.page-footer .page-item .page-item-fa .img-box{
+    background-color: #e72e2e;
+}

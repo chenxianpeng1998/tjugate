@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+.td-form-content-a4{
+	max-width : 650px;
+	margin : 0px auto;
+}
+@media(min-width:1920px){
+	.td-form-content-a4{
+		max-width:1350px;
+	}
+}
+
+.opinion-table{
+	border-top:none;
+	border-bottom: 1px solid #000;
+}
+.opinion-table tr th {
+	width:116px !important;
+}
+.opinion-table tr td {
+	padding : 4px 4px;
+}
+.opinion-table tr td span {
+	word-break: break-all;
+	margin-bottom: 5px;
+}
+.opinion-table tr td p {
+	margin-bottom: 5px;
+}
+.opinion-table-write tr th {
+	width:116px !important;
+}
+
+#process_log p{
+	font-size : 18px;
+	font-weight : bold;
+	color: #000 !important;
+}
+
+.assembly-tags button{
+	border: 1px !important;
+	padding: 10px !important;
+}
+.assembly-readonly{
+	min-height: 25.5px;
+}
+
+.table-index-todo-list, .table-index-my-list{
+	padding: 10px 2px;
+}
+.table td, .table th{
+	padding:.3rem;
+}
+
+#btn-operation .button-list .btn{
+	padding : 8px 18px 7px;
+}
+
+.page-bar{
+	margin: 0px -20px 10px !important;
+}
+.page-bar .page-breadcrumb{
+	padding: 8px 20px;
+}
+
+.dataTables_paginate > ul{
+	padding-left: 0px;
+}
+
+@media(max-width:1024px){
+	.div-index-todo-list, .div-index-my-list{
+		flex: 0 0 100%;
+		max-width:100%;
+	}
+}
+
+
+.list-tip-secretary-handled{
+	border:1px solid #dc3545;
+	padding:2px 4px;
+	border-radius:50%;
+	min-width:22px;
+	min-height:22px;
+	display:inline-block;
+	line-height:1;
+	color:white;
+	background-color:#dc3545;
+	margin-right:4px;
+}
+.list-tip-secretary-isnew{
+	font-weight:bold;
+}
+.list-tip-secretary-isnew em{
+	color:red;
+	margin-right:7px;
+	float:left;
+}
+.list-tip-secretary-canover{
+	color:red;
+	margin-left:3px;
+	font-weight:bold;
+}
+.list-tip-secretary-subover{
+	color:gray;
+	margin-left:3px;
+}

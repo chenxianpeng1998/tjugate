@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+.profile-desc-item{
+	width:70%;
+}
+#employee_info{
+	display:none;
+}
+#student_info{
+	display:none;
+}

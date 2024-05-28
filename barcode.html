@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<title>自定义扫码</title>
+		<link rel="stylesheet" href="./sources/barcode.css" type="text/css" charset="utf-8" />
+		<script type="text/javascript" src="./sources/barcode.js"></script>
+		<style type="text/css">
+			#bcid {
+				width: 100%;
+				position: fixed;
+				top: 0px;
+				bottom: 0px;
+				text-align: center;
+			}
+
+			.tip {
+				color: #FFFFFF;
+				font-weight: bold;
+				text-shadow: 0px -1px #103E5C;
+			}
+		</style>
+
+		<script type="text/javascript">
+			var ws = null;
+			var scan = null;
+			// H5 plus事件处理
+			function plusReady() {
+				// 获取窗口对象
+				ws = plus.webview.currentWebview();
+				nv = ws.getTitleNView();
+				// 开始扫描
+				ws.addEventListener('show', function() {
+					scan = new plus.barcode.Barcode('bcid', plus.barcode.QR, {
+						frameColor: '#009DE2',
+						scanbarColor: '#009DE2',
+					});
+					scan.onmarked = onmarked;
+					scan.start({
+						conserve: true,
+						filename: '_doc/barcode/'
+					});
+					createSubview();
+				}, false);
+				// 显示页面并关闭等待框
+				ws.show('none');
+			}
+			document.addEventListener('plusready', plusReady, false);
+
+			// 二维码扫描成功
+			function onmarked(type, result, file) {
+				switch (type) {
+					case plus.barcode.QR:
+						type = 'QR';
+						break;
+					case plus.barcode.EAN13:
+						type = 'EAN13';
+						break;
+					case plus.barcode.EAN8:
+						type = 'EAN8';
+						break;
+					default:
+						type = '其它' + type;
+						break;
+				}
+				result = result.replace(/\r\n/g, '');
+				ws.opener().evalJS("scaned('" + type + "','" + result + "','" + file + "');");
+				ws.close();
+			}
+			// 创建子窗口
+			var view = null;
+
+			function createSubview() {
+				view = new plus.nativeObj.View('nbutton', {
+					bottom: '28%',
+					left: '30%',
+					width: '40%',
+					height: '44px'
+				}, [{
+					tag: 'font',
+					id: 'text',
+					text: '请扫描二维码',
+					textStyles: {
+						color: '#FFFFFF'
+					}
+				}]);
+				ws.append(view);
+			}
+		</script>
+	</head>
+	<body style="background-color:#000000;">
+		<div id="bcid">
+			<div style="height:40%"></div>
+			<p class="tip">...载入中...</p>
+		</div>
+	</body>
+</html>

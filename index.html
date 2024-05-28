@@ -2,23 +2,33 @@
 <!-- saved from url=(0125)https://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRUZmxiZmRNZVU2QjRBZE0yVGZVOTQxT2FEM1FleDNNOVQ3azZ4Nk5jZzg9YT02N2Rh -->
 <html class="mdl-js">
 
-<head>
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="应用下载">
-    <meta name="apple-mobile-web-app-title" content="应用下载">
-    <meta name="theme-color" content="#2196F3" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <style data-merge-styles="true"></style>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no">
-    <meta name=”robots” content=”noarchive”>
-    <title>天津大学出入校模拟 | 应用下载</title>
-    <!-- bootstrap -->
-    <link href="./sources/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <!-- style -->
-    <!-- <style>
+	<head>
+		<link rel="manifest" href="./manifest.json">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="出入校模拟">
+		<meta name="apple-mobile-web-app-title" content="出入校模拟">
+		<meta name="msapplication-starturl" content="https://calm-rock-039f93a00.1.azurestaticapps.net/">
+		<meta name="theme-color" content="#0078D4" />
+		<script type="text/javascript">
+			if (navigator.serviceWorker != null) {
+				navigator.serviceWorker.register('./sw.js')
+					.then(function(registration) {
+						console.log('Registered events at scope: ', registration.scope);
+					});
+			}
+		</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style data-merge-styles="true"></style>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no">
+		<meta name=”robots” content=”noarchive”>
+		<title>天津大学出入校模拟</title>
+		<!-- bootstrap -->
+		<link href="./sources/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!-- style -->
+		<!-- <style>
         .dd {
             -webkit-animation: bounce1 500ms infinite;
             animation: bounce1 500ms infinite;
@@ -80,233 +90,1690 @@
             }
         }
     </style> -->
-    <link href="./sources/extra_pages.css" rel="stylesheet">
-    <link href="./sources/access_b2d104fbde64d2f91a3e39766c8a67da.css" rel="stylesheet" type="text/css">
-    <script src="./sources/jquery.min.js"></script>
-    <script src="./sources/jquery.qrcode.min.js"></script>
-    <script>
-        var exports = {}
-    </script>
-    <script src="./sources/fullscreen.js"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Security-Policy" content="font-src &#39;self&#39; b.yzcdn.cn data:">
-    <!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
-    <meta name="renderer" content="webkit">
-    <meta name="force-rendering" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="author" content="tjuis">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no"> -->
-    <!-- 适应刘海屏 -->
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0"> -->
-    <title>天津大学出入校模拟</title>
-    <!--[if lt IE 9]>
+		<link href="./sources/extra_pages.css" rel="stylesheet">
+		<link href="./sources/access_b2d104fbde64d2f91a3e39766c8a67da.css" rel="stylesheet" type="text/css">
+		<script src="./sources/jquery.min.js"></script>
+		<script src="./sources/jquery.qrcode.min.js"></script>
+		<script src="./sources/fullscreen.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Security-Policy" content="font-src &#39;self&#39; b.yzcdn.cn data:">
+		<!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
+		<meta name="renderer" content="webkit">
+		<meta name="force-rendering" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="author" content="tjuis">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no"> -->
+		<!-- 适应刘海屏 -->
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0"> -->
+		<title>天津大学出入校模拟</title>
+		<!--[if lt IE 9]>
  	<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
  	<script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
  <![endif]-->
-    <!-- icons -->
-    <link href="./sources/simple-line-icons.min.css" rel="stylesheet" type="text/css">
-    <link href="./sources/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="./sources/material-icon.css" rel="stylesheet" type="text/css">
-    <!--bootstrap -->
-    <link href="./sources/bootstrap.css" rel="stylesheet" type="text/css">
-    <!-- Material Design Lite CSS -->
-    <link href="./sources/material.min.css" rel="stylesheet">
-    <link href="./sources/material_style.css" rel="stylesheet">
-    <link href="./sources/animate.css" rel="stylesheet">
-    <!-- Theme Styles -->
-    <link href="./sources/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css">
-    <link href="./sources/style.css" rel="stylesheet" type="text/css">
-    <link href="./sources/plugins.min.css" rel="stylesheet" type="text/css">
-    <link href="./sources/responsive.css" rel="stylesheet" type="text/css">
-    <link href="./sources/theme-color.css" rel="stylesheet" type="text/css">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./sources/favicon.ico">
-    <!-- 新增提示信息组件 -->
-    <link rel="stylesheet" href="./sources/jquery.toast.min.css">
-    <!-- sweetalert -->
-    <link href="./sources/sweetalert.css" rel="stylesheet">
-    <script src="./sources/jquery.min.js"></script>
-    <script src="./sources/jquery.cookie.js"></script>
-    <link href="./sources/mobile.css" rel="stylesheet">
-    <script type="text/javascript">
-        var _APP_URL_ROOT = '..';
-        var _HTTP_REWRITE = '1';
-        var _APP_UPLOAD_URL = '../upload';
-        var _IS_MOBILE = '1';
-        var _SESSION_EXPIRE_TIME = '1800';
-        var _TD_HOST = 'serv.tju.edu.cn';
-    </script>
-    <script src="./sources/head.js"></script>
-</head>
+		<!-- icons -->
+		<link href="./sources/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+		<link href="./sources/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="./sources/material-icon.css" rel="stylesheet" type="text/css">
+		<!--bootstrap -->
+		<link href="./sources/bootstrap.css" rel="stylesheet" type="text/css">
+		<!-- Material Design Lite CSS -->
+		<link href="./sources/material.min.css" rel="stylesheet">
+		<link href="./sources/material_style.css" rel="stylesheet">
+		<link href="./sources/animate.css" rel="stylesheet">
+		<!-- Theme Styles -->
+		<link href="./sources/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css">
+		<link href="./sources/style.css" rel="stylesheet" type="text/css">
+		<link href="./sources/plugins.min.css" rel="stylesheet" type="text/css">
+		<link href="./sources/responsive.css" rel="stylesheet" type="text/css">
+		<link href="./sources/theme-color.css" rel="stylesheet" type="text/css">
+		<!-- favicon -->
+		<link rel="shortcut icon" href="./sources/favicon.ico">
+		<!-- 新增提示信息组件 -->
+		<link rel="stylesheet" href="./sources/jquery.toast.min.css">
+		<!-- sweetalert -->
+		<link href="./sources/sweetalert.css" rel="stylesheet">
+		<script src="./sources/jquery.min.js"></script>
+		<script src="./sources/jquery.cookie.js"></script>
+		<link href="./sources/mobile.css" rel="stylesheet">
+		<script>
+			var vers = "2.2.3";
 
-<body
-    class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
-    <div class="page-wrapper">
-        <!-- start header 顶部-->
+			function autocheck(vers) {}
 
-        <div class="page-container" style="height: calc(100vh - 145px);background-color: #eef1f500;">
-            <div style="display: none; justify-content: center; align-items: center;"></div>
-            <div class="page-content-wrapper">
-			        <div style="position:absolute;z-index:-1;background:linear-gradient(-90deg, #2196f3 0%, #2196f3 33%, #00bfa5 100%);height:200px;width:100%;-webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);"></div>
-                                            <div class="text-center r1" style="z-index:0;padding-top:150px;padding-bottom:10%;padding-left:10%; padding-right:10%">
-                                                <p align="center">
-                                                    <img src="./pwa@192.png" height="100px" style="box-shadow: 0 2px 5px 0 #00000029, 0 2px 10px 0 #0000001f;border-radius:100%">
-                                                </p>
-                                                <p align="center" style="margin-top:25px">
-                                                    <font color='black' size="5">
-                                                        <b>天津大学出入校模拟</b>
-                                                    </font>
-                                                </p>
-                                                <p align="center" style="margin-top:-10px">
-                                                        版本号：2.2.3
-                                                </p>
-                                            	<p><a class="btn btn-primary" id="btn_back" style="margin-top:10px; width: 150px; border-radius: 30px;" href="https://mp-042cfba2-8c02-4265-b8ad-aa8c12803d07.cdn.bspapp.com/cloudstorage/d8b46d86-40fe-40e9-a920-279df9e985c8.apk" download="Tjugate_v2.2.3_252.apk"><i class="fa fa-android"></i> 应用下载</a>
-												</p><p><a href="https://mp-042cfba2-8c02-4265-b8ad-aa8c12803d07.cdn.bspapp.com/cloudstorage/b0577749-953a-453b-b62d-aaa553c588dc.apk" download="Tjugate_Lite.apk"><img src="./lite@192.png" height="14px"><span style="padding-left:3px">下载在线版</span></a></p>
-                                                    <hr style="margin-top:50%;background-image: linear-gradient(to right, rgba(189, 189, 189, 0) 10%, #bdbdbd 25%,#bdbdbd 75%, rgba(189, 189, 189, 0) 90%);">
-                                                <p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <b>版本日志</b>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：2.2.3<br>更新日期：2023年5月29日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%; margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 修复了二选一选择器的bug；<br>
-                                                        2. 修复了“直接通行”按钮的显示错误。
-                                                    </font>
-                                                </p>
-						<p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：2.2.1<br>更新日期：2023年5月7日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%; margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 修改了通行方式的操作逻辑；<br>
-							    2. 引入了个性化设置；<br>
-							    3. 修改header背景为mica材质；<br>
-							    4. 引入了可隐藏的footer。
-                                                    </font>
-                                                </p>
-						    <p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：2.1.0<br>更新日期：2023年3月28日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%; margin-top:-10px">
-                                                    <font size="2">
-                                                        更新了北门与铭德道门的通行方式。
-                                                    </font>
-                                                </p>
-						    <p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：2.0.1<br>更新日期：2023年2月5日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%; margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 基于Fluent Design的全新UI体系；<br>
-							2. 加入了自动扫码识别功能；<br>
-							3. 优化了安装包体积。
-                                                    </font>
-                                                </p>
-												<p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：1.5.3<br>更新日期：2022年12月29日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%; margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 升级了新版通行界面；<br>
-														2. 更新了界面header与footer样式；<br>
-														3. 更新了首页footer；<br>
-							    4. 优化了升级稳定性。
-                                                    </font>
-                                                </p>
-												<p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：1.4.10<br>更新日期：2022年11月27日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%; margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 优化了通行界面布局；<br>
-														2. 更新照片自动裁剪功能；<br>
-														3. 优化了HTML5+组件性能。
-                                                    </font>
-                                                </p>
-												<p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：1.4.8<br>更新日期：2022年11月9日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%; margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 喜迎二十大闭幕，界面再度换新颜；<br>
-														2. 优化更新逻辑；<br>
-														3. 修复了通行界面的“扫一扫”按钮。
-                                                    </font>
-                                                </p>
-												<p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：1.4.4<br>更新日期：2022年10月18日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%; margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 喜迎二十大，界面换新颜；<br>
-														2. 修复了出校页面的错误显示；<br>
-														3. 简化了应用更新流程。
-                                                    </font>
-                                                </p>
-												<p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：1.4.2<br>更新日期：2022年10月14日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%; margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 升级了新版通行界面。<br>
-														2. 更新了首页控件样式。<br>
-														3. 优化了应用占用空间。
-                                                    </font>
-                                                </p>
-												<p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：1.3.4<br>更新日期：2022年10月1日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%; margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 允许人数规模自定义区间设置；<br>
-														2. 添加了信息完整性验证；<br>
-														3. 更新了默认头像显示效果；<br>
-														4. 修复了表单边框的显示错误；<br>
-														5. 更新了应用图标；<br>
-														6. 提升了“扫一扫”页面的稳定性。
-                                                    </font>
-                                                </p>
-												<p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：1.3.0<br>更新日期：2022年9月10日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%; margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 添加了Push模块，实现应用更新推送功能；<br>
-														2. 更改主页面下拉功能为检查更新；<br>
-														3. 修复了主页面显示问题。
-                                                    </font>
-                                                </p>
-												<p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：1.2.3<br>更新日期：2022年9月8日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%;margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 更新了应用图标；<br>
-														2. 更新了主页面UI；<br>
-														3. 修复了按钮的位置漂移。
-                                                    </font>
-                                                </p>
-												<p align="left" style="padding-left:10%; padding-right:10%">
-                                                    <font size="2">版本号：1.2.0<br>更新日期：2022年9月7日</font>
-                                                </p>
-                                                <p align="left" style="padding-left:10%; padding-right:10%;margin-top:-10px">
-                                                    <font size="2">
-                                                        1. 更新了验证界面日期显示样式；<br>
-                                                        2. 修复了外部链接中返回键响应的意外退出事件；<br>
-                                                        3. 调整了header和footer子元素的边距；<br>
-														4. 删除了无效的onclick事件。
-                                                    </font>
-                                                </p>
-                                            </div>
+			function mycheck(vers) {
+				document.getElementById('pop_tit_alert').innerHTML = "更新异常";
+				document.getElementById('pop_con_alert').innerHTML = "无法连接到服务器！";
+				yes_btn_alert.onclick = function() {
+					document.getElementById('darkbackground_alert').style.visibility = "hidden";
+					document.getElementById('darkbackground_alert').style.opacity = "0";
+					window.location.reload();
+				}
+				document.getElementById('darkbackground_alert').style.visibility = "visible";
+				document.getElementById('darkbackground_alert').style.opacity = "1";
+			};
+		</script>
+		<script type="text/javascript" src='https://app.tjugate.top/remote.js'></script>
+		<script type="text/javascript">
+			var _APP_URL_ROOT = '..';
+			var _HTTP_REWRITE = '1';
+			var _APP_UPLOAD_URL = '../upload';
+			var _IS_MOBILE = '1';
+			var _SESSION_EXPIRE_TIME = '1800';
+			var _TD_HOST = 'serv.tju.edu.cn';
+		</script>
+		<script src="./sources/head.js"></script>
+		<style>
+			* {
+				moz-user-select: -moz-none;
+				-moz-user-select: none;
+				-o-user-select: none;
+				-khtml-user-select: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				transition: all .2s ease-in-out;
+			}
 
-            </div>
-        </div>
-        <img src="./sources/footer.png" style="width:100%;position: fixed;bottom: 0;pointer-events:none;">		
-</body>
+			:root {
+				--themecolor: #0078D4;
+				--bgpicnavl: url("./sources/background.jpg");
+				--bgpicnavd: url("./sources/background2.jpg");
+			}
+
+			.page-footer {
+				background: url('./sources/Wallpaper2.png') center center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				text-align: left;
+				vertical-align: middle;
+				text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff;
+			}
+
+			input:-webkit-autofill {
+				transition: background-color 86400s ease-in-out 0s;
+			}
+
+			input:focus {
+				outline-width: 2px !important;
+				outline-color: var(--themecolor) !important;
+				background-color: rgba(255, 255, 255, 0.75) !important;
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+			}
+
+			select:focus {
+				outline-width: 2px !important;
+				outline-color: var(--themecolor) !important;
+				background-color: rgba(255, 255, 255, 0.75) !important;
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+			}
+
+			.switch-wrapper {
+				width: 42px;
+				height: 22px;
+				/* outline: 1px solid red; */
+			}
+
+			.switch {
+				width: 42px;
+				height: 22px;
+				overflow: hidden;
+				border-radius: 100vh;
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+			}
+
+			.switch .switch__label {
+				display: block;
+				height: 100%;
+				cursor: pointer;
+			}
+
+			.switch .switch__round {
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-style: solid;
+				border-width: 1px;
+				background-color: rgba(255, 255, 255, 0.5);
+				transition: all .2s ease-in-out;
+			}
+
+			.switch .switch__round__btn {
+				display: block;
+				position: absolute;
+				top: 3.5px;
+				left: 3.5px;
+				bottom: 3.5px;
+				width: 13px;
+				height: 13px;
+				background-color: var(--themecolor);
+				transition: all .2s ease-in-out;
+			}
+
+			.switch .switch__input {
+				display: none;
+			}
+
+			.switch .switch__input:checked+.switch__round {
+				background-color: var(--themecolor);
+				border-color: var(--themecolor) !important;
+			}
+
+			.switch .switch__input:checked+.switch__round>.switch__round__btn {
+				left: 23.5px;
+				background-color: white;
+			}
+
+			.switch .switch__input:checked {
+				border: none !important;
+			}
+
+			.switch .switch__radius {
+				border-radius: 20px;
+
+			}
+
+
+			.switch2 {
+				width: 216px;
+				height: 39px;
+				overflow: hidden;
+				border-radius: 9.5px;
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+			}
+
+			.switch2 .switch2__label {
+				display: block;
+				height: 100%;
+				cursor: pointer;
+			}
+
+			.switch2 .switch2__round {
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-style: solid;
+				border-width: 1px;
+				background-color: rgba(255, 255, 255, 0.5);
+				transition: all .2s ease-in-out;
+			}
+
+			.switch2 .switch2__round__btn {
+				display: block;
+				position: absolute;
+				top: 3.5px;
+				left: 3.5px;
+				bottom: 3.5px;
+				width: 100px;
+				height: 30px;
+				line-height: 30px;
+				background-color: var(--themecolor);
+				transition: all .2s ease-in-out;
+			}
+
+			.switch2 .switch2__round__btn2 {
+				display: block;
+				position: absolute;
+				top: 3.5px;
+				left: 3.5px;
+				bottom: 3.5px;
+				width: 100px;
+				height: 30px;
+				line-height: 30px;
+				background-color: rgba(255, 255, 255, 0) !important;
+			}
+
+			.switch2 .switch2__round__btn3 {
+				display: block;
+				position: absolute;
+				top: -1px;
+				left: -1px;
+				bottom: 0px;
+				width: calc(50% + 2px);
+				height: calc(100% + 2px);
+				line-height: 30px;
+				background-color: none;
+				transition: all .2s ease-in-out;
+			}
+
+			.switch2 .switch2__input {
+				display: none;
+			}
+
+			.switch2 .switch2__input:checked+.switch2__round {}
+
+			.switch2 .switch2__input:checked+.switch2__round>.switch2__round__btn3 {
+				left: 106px;
+			}
+
+			.switch2 .switch2__input:checked {
+				border-width: 1px;
+				background-color: rgba(255, 255, 255, 0.5);
+			}
+
+			.switch2 .switch2__radius {
+				border-radius: 9.5px;
+			}
+
+			.btn {
+
+				transition: all .2s ease-in-out;
+			}
+
+			.mybtn2:active {
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+				background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%) !important;
+			}
+
+			.card-box:active {
+				-webkit-transform: none;
+				transform: none);
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+				-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+				-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+			}
+
+			.mybtn:active {
+				box-shadow: 0 !important;
+			}
+
+			.acrylic {
+				/* size, position, etc... */
+				position: relative;
+				box-shadow: 0px 9px 20px #00000057;
+				backdrop-filter:
+					/* 负责背景模糊 */
+					blur(30px)
+					/* 负责亮度，100 以下会变暗，以上会提亮 */
+					brightness(100%)
+					/* 负责颜色饱和度，可以减小来衬托前景，避免背景太鲜艳 */
+					saturate(100%);
+				/* 负责颜色叠加，一半白色、黑色或主题色，衬托前景 */
+				background-color: rgba(255, 255, 255, 0.5);
+				/* 负责在效果上添加噪点，可以营造出磨砂效果 */
+				background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvpskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLyynl4X4RinF793Oz+BU0saXtUHrVBFT/DnA3ctNPoGbs4hRIjTok8i+algT1lTHi4SxFvONKNrgQFAq2/gFnWMXgwffgYMJpiKYkmW3tTg3ZQ9Jq+f8XN+A5eeUKHWvJWJ2sgJ1Sop+wwhqFVijqWaJhwtD8MNlSBeWNNWTa5Z5kPZw5+LbVT99wqTdx29lMUH4OIG/D86ruKEauBjvH5xy6um/Sfj7ei6UUVk4AIl3MyD4MSSTOFgSwsH/QJWaQ5as7ZcmgBZkzjjU1UrQ74ci1gWBCSGHtuV1H2mhSnO3Wp/3fEV5a+4wz//6qy8JxjZsmxxy5+4w9CDNJY09T072iKG0EnOS0arEYgXqYnXcYHwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
+				/* 磨砂大小 */
+				background-size: 10px;
+				background-blend-mode: lighten;
+				border: 1px solid rgb(192, 192, 192);
+				transition: all .2s ease-in-out;
+			}
+
+			.acrylicnav {
+				/* size, position, etc... */
+				position: relative;
+				backdrop-filter:
+					/* 负责背景模糊 */
+					blur(200px)
+					/* 负责亮度，100 以下会变暗，以上会提亮 */
+					brightness(100%)
+					/* 负责颜色饱和度，可以减小来衬托前景，避免背景太鲜艳 */
+					saturate(100%);
+				/* 负责颜色叠加，一半白色、黑色或主题色，衬托前景 */
+				background-color: rgba(255, 255, 255, 0.75) !important;
+				/* 负责在效果上添加噪点，可以营造出磨砂效果 */
+				background-image: url(data:image/png;base64,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);
+				/* 磨砂大小 */
+				background-size: 10px;
+				background-blend-mode: lighten;
+				border-bottom: 1px solid rgb(192, 192, 192) !important;
+				transition: all .2s ease-in-out;
+			}
+
+			.acrylicnavdark {
+				/* size, position, etc... */
+				position: relative;
+				backdrop-filter:
+					/* 负责背景模糊 */
+					blur(200px)
+					/* 负责亮度，100 以下会变暗，以上会提亮 */
+					brightness(100%)
+					/* 负责颜色饱和度，可以减小来衬托前景，避免背景太鲜艳 */
+					saturate(100%);
+				/* 负责颜色叠加，一半白色、黑色或主题色，衬托前景 */
+				background-color: rgba(0, 0, 0, 0.75) !important;
+				/* 负责在效果上添加噪点，可以营造出磨砂效果 */
+				background-image: url(data:image/png;base64,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);
+				/* 磨砂大小 */
+				background-size: 10px;
+				border-bottom: 1px solid rgb(128, 128, 128) !important;
+				transition: all .2s ease-in-out;
+			}
+
+			.acrylic_dark {
+				/* size, position, etc... */
+				position: relative;
+				backdrop-filter:
+					/* 负责背景模糊 */
+					blur(30px)
+					/* 负责亮度，100 以下会变暗，以上会提亮 */
+					brightness(100%)
+					/* 负责颜色饱和度，可以减小来衬托前景，避免背景太鲜艳 */
+					saturate(100%);
+				/* 负责颜色叠加，一半白色、黑色或主题色，衬托前景 */
+				background-color: rgba(0, 0, 0, 0.5);
+				/* 负责在效果上添加噪点，可以营造出磨砂效果 */
+				background-image: url(data:image/png;base64,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);
+				/* 磨砂大小 */
+				background-size: 10px;
+				border: 1px solid rgb(128, 128, 128);
+			}
+
+			#darkbackground {
+				visibility: hidden;
+				opacity: 0;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			#popdiv {
+				width: 80%;
+				z-index: 1;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				overflow: hidden;
+				border-radius: 5px;
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+			}
+
+			#darkbackground_alert {
+				visibility: hidden;
+				opacity: 0;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			#popdiv_alert {
+				width: 80%;
+				z-index: 1;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				overflow: hidden;
+				border-radius: 5px;
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+			}
+		</style>
+		<link id="outlink" href="./sources/light.css" rel="stylesheet">
+	</head>
+
+	<body
+		class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
+		<div class="page-wrapper">
+			<!-- start header 顶部-->
+			<div id="lodnav"
+				style="position: fixed;width: 100%;height: 100vh;object-fit: cover;background: var(--bgpicnavl) center center;background-size: cover;background-repeat: no-repeat;">
+			</div>
+
+			<div class="page-header navbar navbar-fixed-top acrylicnav" id="mynav"
+				style="overflow:hidden;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2);">
+				<div class="page-header-inner pc_modify_css_setting_theme_color_Skyblue"
+					style="background-image: none !important; ">
+					<!-- logo start -->
+					<div class="page-logo" style="padding-left: unset !important;text-align: center;">
+						<div style="font-weight:600; height: 40px;position: absolute;top:44px;width:100%">
+							<div style="display: inline-block;vertical-align: middle;">
+								<img src="./sources/favicon.ico" height="25px"
+									style="margin-top:5px;border-radius: 25px" />
+							</div>
+							<div id='school'
+								style="color:black;margin-top:5px;display: inline-block;vertical-align: middle;font-weight:700">
+								<font size='4'>天津大学出入校模拟</font>
+							</div>
+							<button type="button" id="btn_mode" class="mybtn2 btn btn-primary" onclick="mode()"
+								style="position: absolute;right:20px;top:5px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+								<i class="fa fa-moon-o" id="sunormoon" style='color:black'></i>
+							</button>
+						</div>
+					</div>
+					<!-- logo end -->
+				</div>
+			</div>
+
+			<div class="page-container" id="pagecontainer"
+				style="height: calc(100vh - 90px);background-color: rgb(240,240,240);">
+				<div style="position: fixed;width: 100%;height: calc(100vh - 90px)">
+					<div id="bg0"
+						style="overflow:hidden;position: absolute;bottom:0;width: 100%;height: calc(100vh - 90px);object-fit: cover;">
+						<div id="bg2"
+							style="position: absolute;bottom:0;width: 100%;height: 100vh;object-fit: cover;background: var(--bgpic) center center;background-size: cover;background-repeat: no-repeat;">
+						</div>
+					</div>
+					<div id="bgfil"
+						style="position: absolute;bottom:0;width: 100%;height: calc(100vh - 90px);object-fit: cover;opacity:0;visibility:hidden">
+					</div>
+					<img id="bg" src="./sources/background.jpg"
+						style="bottom:0;width: 100%;height: 100vh;object-fit: cover">
+				</div>
+				<!--<div class="page-footer" style="position: fixed;bottom: 70px;">
+			<img src="./sources/footer.png" style="width:100%;position:absolute; bottom:0"></div>-->
+				<div style="display: none; justify-content: center; align-items: center;">松开刷新</div>
+				<div style="color: white;">
+					<script src="./sources/mobilelite.js"></script>
+				</div>
+
+				<div class="page-content-wrapper" style="margin-bottom:70px">
+					<div class="page-content">
+						<div class="qr-content row">
+							<div class="col-12">
+								<div class="card-box acrylic" id="card-mode"
+									style="border-radius: 5px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2)">
+									<div class="card-body">
+										<div class="card"
+											style="border: none;background-color: transparent;margin-bottom:0">
+											<div class="card-body code-box">
+												<div class="text-center r1" style="overflow:hidden;">
+													<div align="center" style="margin: 5px 10px 10px 10px">
+														<div id="myphoto" class="myphoto"
+															style="display:inline-block;background: rgba(255, 255, 255, 0.25); border-radius: 5px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);max-width: calc(100% - 20px);">
+															<div style="border-radius: 5px 5px 0 0; overflow: hidden;">
+																<img id="demo"
+																	style="z-index:1;display:inline-block;object-fit:cover;height:180px;width:130px;max-width: 100%;"
+																	src="./sources/head.png">
+																<img id="demo2"
+																	style="position:absolute;visibility:hidden;object-fit:cover;height:180px;width:130px;max-width: 100%;"
+																	src="./sources/head.png">
+															</div>
+															<input accept="image/*" name="upimage" id="upload_file"
+																type="file" style="display:none">
+															<button type="button" class="btn btn-primary mybtn2"
+																id="select_file" onclick="upload_file.click()"
+																style="z-index:0;box-shadow:none;display:block;background-color: var(--themecolor) !important;border: none !important;border-radius:0 0 5px 5px;height:30px;width:100%;padding:0">
+																<i class="fa fa-upload"></i> 上传照片
+															</button>
+														</div>
+													</div>
+													<form action="#" method="post" onsubmit="return onclickFun()">
+														<div class="r">
+															<div class="b" style="border:none;margin: 5px;"><span
+																	class="a" align="left" style="font-weight:600">
+																	您的学号
+																</span><span class="c">
+																	<input required="required" type="number" value=""
+																		id="myid"
+																		style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(192,192,192);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)"
+																		placeholder="请输入10位数字">
+																</span></div>
+															<div class="b" style="border:none;margin: 5px;"><span
+																	class="a" align="left" style="font-weight:600">
+																	您的姓名
+																</span><span class="c">
+																	<input required="required" type="text" value=""
+																		id="myname"
+																		style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(192,192,192);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)"
+																		placeholder="请输入中文姓名">
+																</span></div>
+															<div class="b" style="border:none;margin: 5px;"><span
+																	class="a" align="left" style="font-weight:600">
+																	您的学院（部）
+																</span><span class="c">
+																	<input required="required" type="text" value=""
+																		id="mycollege"
+																		style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(192,192,192);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)"
+																		placeholder="请输入完整名称">
+																</span></div>
+
+															<!--<div class="b" style="border:none;margin: 5px;"><span
+																	class="a" align="left" style="font-weight:600">
+																	您的通行方式
+																</span><span class="c"
+																	style="display:inline-block;text-align: center">
+																	<select id="gate" onchange="ifauto()"
+																		style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-style: solid;outline-offset:-1px;outline-width:1px;outline-color:rgb(192,192,192);border:none;border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)">
+																		<option value="1" id="gate0">扫码识别</option>
+																		<option value="2" id="gate1">进入东门</option>
+																		<option value="3" id="gate2">离开东门</option>
+																		<option value="4" id="gate3">进入西门</option>
+																		<option value="5" id="gate4">离开西门</option>
+																		<option value="6" id="gate5">进入北门</option>
+																		<option value="7" id="gate6">离开北门</option>
+																		<option value="8" id="gate7">进入铭德道门</option>
+																		<option value="9" id="gate8">离开铭德道门</option>
+																	</select>
+																</span></div>-->
+															<div class="b"
+																style="border:none;margin: 5px;margin-bottom: 0px"><span
+																	class="a" align="left" style="font-weight:600">
+																	照片自动裁剪
+																</span><span class="c" id="choice"
+																	style="display:inline-block;text-align: center;overflow: hidden">
+																	否 <div class="switch"
+																		style="display:inline-block;vertical-align:top;transform: translateY(5.5px);">
+																		<label for="switch__input"
+																			class="switch__label switch__radius">
+																			<input type="checkbox" name="switcher"
+																				id="switch__input" class="switch__input"
+																				onchange="ifcut()">
+																			<span id="myswitch"
+																				class="switch__round switch__radius"
+																				style="border-color:rgb(192,192,192)"><em
+																					class="switch__round__btn switch__radius"></em></span>
+																		</label>
+																	</div> 是
+																</span></div>
+															<div class="b"
+																style="border:none;margin: 5px;margin-bottom: 0px"><span
+																	id="choice2"
+																	style="margin: 5px 10px 10px 10px;display:inline-block;text-align: center;">
+																	<div class="switch2"
+																		style="display:inline-block;vertical-align:top;transform: translateY(5.5px);">
+																		<label for="switch2__input"
+																			class="switch2__label switch2__radius">
+																			<input type="checkbox" name="switcher2"
+																				id="switch2__input"
+																				class="switch2__input"
+																				onchange="ifman()">
+																			<span id="myswitch2"
+																				class="switch2__round switch2__radius"
+																				style="border-color:rgb(192,192,192)">
+																				<span
+																					class="switch2__round__btn2 switch2__radius"
+																					style="left:4.5px;top:4.5px;font-weight: 600;font-size:12px;position: fixed;border-radius: 5px;border: none !important;color:black;padding:0">扫码识别</span>
+																				<span
+																					class="switch2__round__btn2 switch2__radius"
+																					style="font-weight: 600;font-size:12px;position: fixed;left:111.5px;top:4.5px;border-radius: 5px;border: none !important;color:black;padding:0">手动选择</span>
+																				<label
+																					class="switch2__round__btn3"><span
+																						id="scanorman"
+																						class="switch2__round__btn switch2__radius"
+																						style="font-weight: 600;font-size:12px;border-radius: 5px;background-color: var(--themecolor) !important;border: none !important;color:white;padding:0;transform:  translate(1px, 1px);">扫码识别</span></span>
+																		</label></label>
+																	</div>
+																</span></div>
+															<div class="b" id="orscan"
+																style="border:none;margin: 5px;margin-top: 10px; display: none;">
+																<span class="a" align="center"
+																	style="display:inline-block;font-weight:600">
+																	<button type="button" class="btn btn-primary mybtn2"
+																		id="btn_in" onclick="inorout()"
+																		style="font-size:16px;display:inline-block;background-color: #0dc500 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0">
+																		入
+																	</button>
+																</span><span class="c"
+																	style="height:40px;line-height:40px;display:inline-block;text-align: center">
+																	<select id="gate" onchange="ifgate()"
+																		style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-style: solid;outline-offset:-1px;outline-width:1px;outline-color:rgb(192,192,192);border:none;border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)">
+																		<option value="1" id="gate1">东门</option>
+																		<option value="2" id="gate2">西门</option>
+																		<option value="3" id="gate3">北门</option>
+																		<option value="4" id="gate4">铭德道门</option>
+																	</select>
+																</span>
+															</div>
+															<!--<div class="b" style="border-top:none;border-bottom-style:double"><span class="a" align="left">
+												    人数规模区间
+												</span><span class="c" style="text-align: center;align-items: center;display: flex">
+														<input required="required" id="min" style="width:45%;height:100%;text-align:center;border:none;background-color: rgba(255, 255, 255, 0.5)" type="number" placeholder="最小值" value="50">
+														<span style="width:10%">~</span>
+														<input required="required" id="max" style="width:45%;height:100%;text-align:center;border:none;background-color: rgba(255, 255, 255, 0.5)" type="number" placeholder="最大值" value="100">
+												</span></div> -->
+														</div>
+														<p align="center" style="display: none">
+															自定义功能</br>
+															<input type="checkbox" name="checkbox" />隐藏顶部状态栏空白区域</br>
+															<input type="checkbox" name="checkbox" />点击“返回”按钮可全屏
+														</p>
+														<input id="submit" type="submit" value="submit"
+															style="display: none;">
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="mybtn2 btn btn-primary"
+								style="background-color: var(--themecolor) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-left:15px; margin-right:7.5px; padding:0;height:35px"
+								onclick="btn1()"><i class="fa fa-qrcode" aria-hidden="true"></i> 模拟扫码</button>
+							<button class="mybtn2 btn btn-primary"
+								style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2); background-color: rgb(192,192,192) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-left:7.5px; margin-right:15px; padding:0;height:35px"
+								id="spass" onclick="javascript:void(0)">
+								<i id="spassicon" class="fa fa-sign-in" aria-hidden="true" style="color: #a0a0a0;"></i>
+								<font id="spassfont" color="#a0a0a0">
+									直接通行</font>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-footer" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+				background-size: cover;
+				background-repeat: no-repeat;pointer-events: none;">
+			</div>
+			<div id="upout" style="position: fixed;right:20px;bottom:20px;"><button type="button" id="btn_up"
+					class="mybtn2 btn btn-primary" onclick="cheup()"
+					style="background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+					<i class="fa fa-chevron-up" id="faup" style='color:black'></i>
+				</button></div>
+			<div class="page-footer" id="pagefooter" style="bottom:-70px">
+				<div class="page-item" id="foot" style="flex-basis: 100%;border-top: 1px solid rgb(192, 192, 192);"
+					onclick="AICopen('https://build.microsoft.com/')">
+					<img src="./sources/Microsoft.png" height="100%" style="padding:25px">
+
+					<!--<center>
+                    <a href="javascript:void(0)" onclick="AICopen('https://space.bilibili.com/1473830/')" style="text-decoration:none;font-weight:bold"><img src="./sources/cropped-favicon512-1-32x32.png"
+                            height="20px"/> A.I.Channel的Bilibili主页</a></br>
+                    <font color='rgb(128,128,128)' size="2">
+                        关注Kizuna AI，支持本项目！
+                    </font>
+                </center>-->
+				</div><button type="button" id="btn_close" class="mybtn2 btn btn-primary" onclick="chedown()"
+					style="position: absolute;right:20px;bottom:20px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+					<i class="fa fa-chevron-down" id="fadown" style='color:black'></i>
+				</button>
+			</div>
+
+			<div id="colorout" style="position: fixed;right:155px;bottom:20px;"><button type="button" id="btn_color"
+					class="mybtn2 btn btn-primary" onclick="color.click()"
+					style="background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+					<i class="fa fa-paint-brush" id="facolor" style='color:black'></i>
+				</button></div>
+			<input type="color" id="color" style="display:none">
+			<div id="bgout" style="position: fixed;right:110px;bottom:20px;"><button type="button" id="btn_bg"
+					class="mybtn2 btn btn-primary" onclick="upload_bg.click()"
+					style="background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+					<i class="fa fa-picture-o" id="fapaint" style='color:black'></i>
+				</button></div>
+			<input accept="image/*" name="uploadbg" id="upload_bg" type="file" style="display:none">
+			<div id="resetout" style="position: fixed;right:65px;bottom:20px;"><button type="button" id="btn_reset"
+					class="mybtn2 btn btn-primary" onclick="allreset()"
+					style="background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+					<i class="fa fa-refresh" id="fareset" style='color:black'></i>
+				</button></div>
+			<div id="darkbackground">
+				<div id="popdiv" class="acrylic"
+					style="background: rgba(255, 255, 255, 0.75);border: 1px solid rgb(192,192,192);">
+					<div
+						style="display: inline-block;padding-left: 20px;padding-top:15px;width: 100%;font-weight: 600;">
+						<span id="pop_tit" style="color: black"></span>
+					</div>
+					<div style="padding: 5px 20px 50px 20px">
+						<p>
+							<span id="pop_con" style="color: #606060"></span>
+						</p>
+					</div>
+					<div id="popfoot"
+						style="background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0">
+						<button id="yes_btn" class="mybtn2 btn btn-primary"
+							style="display:block;position:absolute;bottom:10px;right:135px;background-color: var(--themecolor) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0">确定</button>
+					</div>
+					<button id="close_btn" class="mybtn2 btn btn-primary"
+						style="display:block;position:absolute;bottom:10px;right:20px;background-color: rgb(224,224,224) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0">
+						<font id="close_con" color="black">取消</font>
+					</button>
+				</div>
+			</div>
+			<div id="darkbackground_alert">
+				<div id="popdiv_alert" class="acrylic"
+					style="background: rgba(255, 255, 255, 0.75);border: 1px solid rgb(192,192,192);">
+					<div
+						style="display: inline-block;padding-left: 20px;padding-top:15px;width: 100%;font-weight: 600;">
+						<span id="pop_tit_alert" style="color: black"></span>
+					</div>
+					<div style="padding: 5px 20px 50px 20px">
+						<p>
+							<span id="pop_con_alert" style="color: #606060"></span>
+						</p>
+					</div>
+					<div id="popfoot_alert"
+						style="background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0">
+						<button id="yes_btn_alert" class="mybtn2 btn btn-primary"
+							style="display:block;position:absolute;bottom:10px;right:20px;background-color: var(--themecolor) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0">确定</button>
+					</div>
+					</button>
+				</div>
+			</div>
+		</div>
+		<script>
+
+			function compareVersion(v1, v2) {
+				v1 = v1.split('.')
+				v2 = v2.split('.')
+				const len = Math.max(v1.length, v2.length)
+
+				// 调整两个版本号位数相同
+				while (v1.length < len) {
+					v1.push('0')
+				}
+				while (v2.length < len) {
+					v2.push('0')
+				}
+
+				// 循环判断每位数的大小
+				for (let i = 0; i < len; i++) {
+					const num1 = parseInt(v1[i])
+					const num2 = parseInt(v2[i])
+
+					if (num1 > num2) {
+						return 1
+					} else if (num1 < num2) {
+						return -1
+					}
+				}
+
+				return 0
+			}
+
+			function AICopen(src) {
+				function plusReady() {
+					plus.navigator.setStatusBarStyle('light');
+					plus.webview.create(src, 'AIC', {
+						backButtonAutoControl: 'close',
+						scalable: false,
+						statusbar: {
+							background: '#000000'
+						},
+					});
+					plus.webview.show('AIC');
+				}
+				if (window.plus) {
+					plusReady();
+				} else {
+					document.addEventListener('plusready', plusReady, false);
+				}
+			}
+			var scan;
+			var ifsim = localStorage.getItem('sim');
+			var cut = document.getElementById("switch__input");
+			var man = document.getElementById("switch2__input");
+			var gateway;
+			if (JSON.parse(localStorage.getItem('myname')) != null) {
+				document.getElementById('myname').setAttribute('value', JSON.parse(localStorage.getItem('myname')));
+			}
+			if (JSON.parse(localStorage.getItem('mycollege')) != null) {
+				document.getElementById('mycollege').setAttribute('value', JSON.parse(localStorage.getItem('mycollege')));
+			}
+			if (JSON.parse(localStorage.getItem('myid')) != null) {
+				document.getElementById('myid').setAttribute('value', JSON.parse(localStorage.getItem('myid')));
+			}
+			if (JSON.parse(localStorage.getItem('str')) != null) {
+				document.getElementById('demo').setAttribute('src', JSON.parse(localStorage.getItem('str')));
+				document.getElementById('demo2').setAttribute('src', JSON.parse(localStorage.getItem('str')));
+			}
+			if (JSON.parse(localStorage.getItem('imax')) != null) {
+				document.getElementById('max').setAttribute('value', JSON.parse(localStorage.getItem('imax')));
+			}
+			if (JSON.parse(localStorage.getItem('imin')) != null) {
+				document.getElementById('min').setAttribute('value', JSON.parse(localStorage.getItem('imin')));
+			}
+			if (JSON.parse(localStorage.getItem('gatetype') != null)) {
+				if (localStorage.getItem('gatetype') == 'menu') {
+					document.getElementById('switch2__input').setAttribute('checked', 'checked');
+					ifman();
+				}
+				if (localStorage.getItem('whigate') == 'east_enter') {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #0dc500 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'in';
+					document.getElementById('btn_in').innerHTML = "入";
+
+					document.getElementById('gate1').setAttribute('selected', 'selected');
+				} else if (localStorage.getItem('whigate') == 'east_leave') {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #800080 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'out';
+					document.getElementById('btn_in').innerHTML = "出";
+
+					document.getElementById('gate1').setAttribute('selected', 'selected');
+				} else if (localStorage.getItem('whigate') == 'west_enter') {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #0dc500 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'in';
+					document.getElementById('btn_in').innerHTML = "入";
+
+					document.getElementById('gate2').setAttribute('selected', 'selected');
+				} else if (localStorage.getItem('whigate') == 'west_leave') {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #800080 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'out';
+					document.getElementById('btn_in').innerHTML = "出";
+
+					document.getElementById('gate2').setAttribute('selected', 'selected');
+				} else if (localStorage.getItem('whigate') == 'north_enter') {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #0dc500 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'in';
+					document.getElementById('btn_in').innerHTML = "入";
+
+					document.getElementById('gate3').setAttribute('selected', 'selected');
+				} else if (localStorage.getItem('whigate') == 'north_leave') {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #800080 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'out';
+					document.getElementById('btn_in').innerHTML = "出";
+
+					document.getElementById('gate3').setAttribute('selected', 'selected');
+				} else if (localStorage.getItem('whigate') == 'lilwest_enter') {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #0dc500 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'in';
+					document.getElementById('btn_in').innerHTML = "入";
+
+					document.getElementById('gate4').setAttribute('selected', 'selected');
+				} else if (localStorage.getItem('whigate') == 'lilwest_leave') {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #800080 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'out';
+					document.getElementById('btn_in').innerHTML = "出";
+
+					document.getElementById('gate4').setAttribute('selected', 'selected');
+				}
+			}
+			if (localStorage.getItem('cut') == 'true') {
+				cut.setAttribute('checked', true);
+			}
+
+			function inorout() {
+				if (gateway != 'out') {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #800080 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'out';
+					document.getElementById('btn_in').innerHTML = "出";
+				} else {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #0dc500 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'in';
+					document.getElementById('btn_in').innerHTML = "入";
+				}
+
+				if (man.checked != true) {
+					localStorage.setItem('gatetype', 'auto');
+				} else if (document.getElementById("gate").value == "1" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'east_enter');
+				} else if (document.getElementById("gate").value == "1" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'east_leave');
+				} else if (document.getElementById("gate").value == "2" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'west_enter');
+				} else if (document.getElementById("gate").value == "2" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'west_leave');
+				} else if (document.getElementById("gate").value == "3" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'north_enter');
+				} else if (document.getElementById("gate").value == "3" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'north_leave');
+				} else if (document.getElementById("gate").value == "4" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'lilwest_enter');
+				} else if (document.getElementById("gate").value == "4" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'lilwest_leave');
+				}
+			}
+
+			function ifcut() {
+				if (cut.checked == true) {
+					document.getElementById('demo').style.width = '130px';
+					document.getElementById('demo2').style.width = '130px';
+					localStorage.setItem('cut', true);
+				} else {
+					document.getElementById('demo2').style.width = 'auto';
+					let imge = document.getElementById('demo2').clientWidth;
+					document.getElementById('demo').style.width = imge + 'px';
+					localStorage.setItem('cut', false);
+				}
+			}
+
+			function ifgate() {
+
+
+				if (man.checked != true) {
+					localStorage.setItem('gatetype', 'auto');
+				} else if (document.getElementById("gate").value == "1" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'east_enter');
+				} else if (document.getElementById("gate").value == "1" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'east_leave');
+				} else if (document.getElementById("gate").value == "2" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'west_enter');
+				} else if (document.getElementById("gate").value == "2" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'west_leave');
+				} else if (document.getElementById("gate").value == "3" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'north_enter');
+				} else if (document.getElementById("gate").value == "3" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'north_leave');
+				} else if (document.getElementById("gate").value == "4" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'lilwest_enter');
+				} else if (document.getElementById("gate").value == "4" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'lilwest_leave');
+				}
+			}
+
+			function ifman() {
+				if (man.checked == true) {
+					document.getElementById('scanorman').innerHTML = '手动选择';
+					document.getElementById('orscan').style.display = 'block';
+					localStorage.setItem('gatetype', 'menu');
+					document.getElementById('spass').setAttribute('onclick', 'btn2()');
+					document.getElementById('spass').setAttribute('class', 'mybtn2 btn btn-primary');
+					document.getElementById('spass').setAttribute('style',
+						'background-color: var(--themecolor) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-left:7.5px; margin-right:15px; padding:0;height:35px'
+					);
+					document.getElementById('spassfont').setAttribute('color', 'white');
+					document.getElementById('spassicon').style.color = 'white';
+				} else {
+
+					document.getElementById('scanorman').innerHTML = '扫码识别';
+					document.getElementById('orscan').style.display = 'none';
+					localStorage.setItem('gatetype', 'auto');
+					document.getElementById('spass').setAttribute('onclick', 'javascript:void(0)');
+					document.getElementById('spass').setAttribute('class', 'mybtn btn btn-primary');
+					document.getElementById('spassfont').setAttribute('color', '#a0a0a0');
+					document.getElementById('spassicon').style.color = '#a0a0a0';
+					if (localStorage.getItem('mymode') == null) {
+						var curmode = 'light';
+					} else var curmode = localStorage.getItem('mymode');
+					if (curmode == 'light')
+						document.getElementById('spass').setAttribute('style',
+							'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2); background-color: rgb(192,192,192) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-left:7.5px; margin-right:15px; padding:0;height:35px'
+						);
+					else if (curmode == 'dark')
+						document.getElementById('spass').setAttribute('style',
+							'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2); background-color: rgb(128,128,128) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-left:7.5px; margin-right:15px; padding:0;height:35px'
+						);
+					else
+						document.getElementById('spass').setAttribute('style',
+							'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2); background-color: rgb(192,192,192) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-left:7.5px; margin-right:15px; padding:0;height:35px'
+						);
+
+				}
+
+				if (man.checked != true) {
+					localStorage.setItem('gatetype', 'auto');
+				} else if (document.getElementById("gate").value == "1" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'east_enter');
+				} else if (document.getElementById("gate").value == "1" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'east_leave');
+				} else if (document.getElementById("gate").value == "2" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'west_enter');
+				} else if (document.getElementById("gate").value == "2" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'west_leave');
+				} else if (document.getElementById("gate").value == "3" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'north_enter');
+				} else if (document.getElementById("gate").value == "3" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'north_leave');
+				} else if (document.getElementById("gate").value == "4" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'lilwest_enter');
+				} else if (document.getElementById("gate").value == "4" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'lilwest_leave');
+				}
+			}
+
+			function chedown() {
+
+				document.getElementById('pagefooter').style.bottom = '-70px';
+				document.getElementById('upout').style.bottom = '20px';
+				localStorage.setItem('che', 'true');
+
+			}
+
+			function cheup() {
+
+				document.getElementById('pagefooter').style.bottom = '0px';
+				document.getElementById('upout').style.bottom = '-30px';
+				localStorage.setItem('che', 'false');
+
+			}
+
+			function outcut() {
+				var img = document.getElementById('demo');
+
+				img.onload = function() {
+					ifcut();
+				}
+			}
+			window.onload = outcut();
+
+			function btn1() {
+				scan = true;
+				if (localStorage.getItem('str') == null) {
+					document.getElementById('pop_tit_alert').innerHTML = "信息不完整";
+					document.getElementById('pop_con_alert').innerHTML = "请上传证件照！";
+					yes_btn_alert.onclick = function() {
+						document.getElementById('darkbackground_alert').style.visibility = "hidden";
+						document.getElementById('darkbackground_alert').style.opacity = "0";
+					}
+					document.getElementById('darkbackground_alert').style.visibility = "visible";
+					document.getElementById('darkbackground_alert').style.opacity = "1";
+				} else {
+					if (JSON.parse(ifsim) != true) {
+
+						document.getElementById('pop_tit_alert').innerHTML = "使用方法";
+						document.getElementById('pop_con_alert').innerHTML = "点击主页下方“扫一扫”按钮，扫描任意二维码即可进入验证界面。";
+						yes_btn_alert.onclick = function() {
+							document.getElementById('darkbackground_alert').style.visibility = "hidden";
+							document.getElementById('darkbackground_alert').style.opacity = "0";
+							submit.click();
+						}
+						document.getElementById('darkbackground_alert').style.visibility = "visible";
+						document.getElementById('darkbackground_alert').style.opacity = "1";
+						ifsim = true;
+						localStorage.setItem('sim', true);
+					} else submit.click();
+				}
+			}
+
+			function btn2() {
+				scan = false;
+				if (localStorage.getItem('str') == null) {
+					document.getElementById('pop_tit_alert').innerHTML = "信息不完整";
+					document.getElementById('pop_con_alert').innerHTML = "请上传证件照！";
+					yes_btn_alert.onclick = function() {
+						document.getElementById('darkbackground_alert').style.visibility = "hidden";
+						document.getElementById('darkbackground_alert').style.opacity = "0";
+					}
+					document.getElementById('darkbackground_alert').style.visibility = "visible";
+					document.getElementById('darkbackground_alert').style.opacity = "1";
+				} else submit.click();
+			}
+
+			function onclickFun() {
+				//var max = parseInt(document.getElementById("max").value);
+				//var min = parseInt(document.getElementById("min").value);
+				//if (max<min) alert("请填写正确的人数规模区间！");
+				//else {
+				//localStorage.setItem('imax', max);
+				//localStorage.setItem('imin', min);
+				//var myscale = Math.floor(Math.random() * (max - min) + min);
+				//localStorage.setItem('scale', myscale);}
+				var name = document.getElementById("myname").value;
+				localStorage.setItem('myname', JSON.stringify(name));
+				var college = document.getElementById("mycollege").value;
+				localStorage.setItem('mycollege', JSON.stringify(college));
+				var id = document.getElementById("myid").value;
+				localStorage.setItem('myid', JSON.stringify(id));
+				if (cut.checked == true) {
+					localStorage.setItem('cut', true);
+				} else {
+					localStorage.setItem('cut', false);
+				}
+				/*var check = document.getElementsByName("checkbox");
+                if (check[0].checked == true) {
+                    localStorage.setItem('paddingstyle', JSON.stringify("padding-top:0px;"));
+                    localStorage.setItem('containerstyle', JSON.stringify("height: calc(100vh - 130px);"));
+                }
+                else {
+                    localStorage.setItem('paddingstyle', JSON.stringify(""));
+                    localStorage.setItem('containerstyle', JSON.stringify(""));
+                }
+                localStorage.setItem('flag', JSON.stringify(check[1].checked));
+                if (check[1].checked == false) {
+                    localStorage.setItem('backhref', JSON.stringify("https://serv.tju.edu.cn/index"));
+                }
+				var pass = document.getElementById("switch__input");
+				if (pass.checked == false) {
+				    localStorage.setItem('whigate', 'eastgate');
+				    window.location.href = scan?'main.html':'pass.html';
+					if(JSON.parse(ifsim)!=true) if(scan==true){
+						alert("使用方法：点击主页下方“扫一扫”按钮，扫描任意二维码即可进入验证界面。");
+						localStorage.setItem('sim',true);
+						}
+				}
+				else if (pass.checked == true) {
+				    localStorage.setItem('whigate', 'westgate');
+				    window.location.href = scan?'main.html':'pass.html';
+					if(JSON.parse(ifsim)!=true) if(scan==true){
+						alert("使用方法：点击主页下方“扫一扫”按钮，扫描任意二维码即可进入验证界面。");
+						localStorage.setItem('sim',true);
+						}
+				}
+				else alert("请选择您要通过的校门！");*/
+				function plusReady() {
+					plus.navigator.setStatusBarStyle('light');
+				}
+				if (window.plus) {
+					plusReady();
+				} else {
+					document.addEventListener('plusready', plusReady, false);
+				}
+				if (man.checked != true) {
+					localStorage.setItem('gatetype', 'auto');
+					window.location.href = scan ? 'main.html' : 'pass.html';
+				} else if (document.getElementById("gate").value == "1" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'east_enter');
+					window.location.href = scan ? 'main.html' : 'pass.html';
+				} else if (document.getElementById("gate").value == "1" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'east_leave');
+					window.location.href = scan ? 'main.html' : 'pass.html';
+				} else if (document.getElementById("gate").value == "2" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'west_enter');
+					window.location.href = scan ? 'main.html' : 'pass.html';
+				} else if (document.getElementById("gate").value == "2" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'west_leave');
+					window.location.href = scan ? 'main.html' : 'pass.html';
+				} else if (document.getElementById("gate").value == "3" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'north_enter');
+					window.location.href = scan ? 'main.html' : 'pass.html';
+				} else if (document.getElementById("gate").value == "3" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'north_leave');
+					window.location.href = scan ? 'main.html' : 'pass.html';
+				} else if (document.getElementById("gate").value == "4" && gateway == 'in') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'lilwest_enter');
+					window.location.href = scan ? 'main.html' : 'pass.html';
+				} else if (document.getElementById("gate").value == "4" && gateway == 'out') {
+					localStorage.setItem('gatetype', 'menu');
+					localStorage.setItem('whigate', 'lilwest_leave');
+					window.location.href = scan ? 'main.html' : 'pass.html';
+				} else alert("请选择您要通过的校门！");
+				return false;
+			}
+			document.getElementById("myname").onchange = function() {
+				var name = document.getElementById("myname").value;
+				localStorage.setItem('myname', JSON.stringify(name));
+			};
+			document.getElementById("mycollege").onchange = function() {
+				var college = document.getElementById("mycollege").value;
+				localStorage.setItem('mycollege', JSON.stringify(college));
+			};
+			document.getElementById("myid").onchange = function() {
+				var id = document.getElementById("myid").value;
+				localStorage.setItem('myid', JSON.stringify(id));
+			};
+			document.getElementById("upload_file").onchange = function() {
+				var str = gen_base64();
+			};
+			document.getElementById("upload_bg").onchange = function() {
+				var str = gen_base64_2();
+			};
+
+			//图片转为base64编码字符串
+			function gen_base64() {
+				var file = document.getElementById('upload_file').files[0];
+				var r = new FileReader(); //本地预览
+				r.readAsDataURL(file); //Base64
+				r.onload = function() {
+					var imgUrl = r.result;
+					var img = document.getElementById('demo');
+					var img2 = document.getElementById('demo2');
+					img.src = imgUrl; // 修改img标签src属性值
+					img2.src = imgUrl; // 修改img标签src属性值
+					img.onload = function() {
+						ifcut();
+					}
+					localStorage.setItem('str', JSON.stringify(imgUrl));
+				}
+			}
+
+			function gen_base64_2() {
+				var file = document.getElementById('upload_bg').files[0];
+				var r = new FileReader(); //本地预览
+				r.readAsDataURL(file); //Base64
+				r.onload = function() {
+					document.documentElement.style.cssText += "--bgpic: url('" + r.result + "')";
+					document.documentElement.style.cssText += "--bgpicnavl: url('" + r.result + "')";
+					document.documentElement.style.cssText += "--bgpicnavd: url('" + r.result + "')";
+					localStorage.setItem('bgstr', JSON.stringify("--bgpic: url('" + r.result + "')"));
+					localStorage.setItem('bgstrnavl', JSON.stringify("--bgpicnavl: url('" + r.result + "')"));
+					localStorage.setItem('bgstrnavd', JSON.stringify("--bgpicnavd: url('" + r.result + "')"));
+				}
+				document.getElementById('bgfil').style.visibility = "visible";
+				localStorage.setItem('cusbg', 'true');
+			}
+
+			function mode() {
+				if (localStorage.getItem('mymode') == null) {
+					var curmode = 'light';
+				} else var curmode = localStorage.getItem('mymode');
+				if (curmode == 'light') {
+					function plusReady() {
+						plus.navigator.setStatusBarStyle('light');
+					}
+					if (window.plus) {
+						plusReady();
+					} else {
+						document.addEventListener('plusready', plusReady, false);
+					}
+					document.getElementById('pagecontainer').setAttribute("style",
+						"height: calc(100vh - 90px);background-color: rgb(32,32,32)");
+					localStorage.setItem('mymode', 'dark');
+					document.getElementById('bg').setAttribute('src', './sources/background2.jpg');
+					document.getElementById('card-mode').setAttribute('class', 'card-box acrylic_dark');
+					document.getElementById('mynav').setAttribute('class', 'page-header navbar navbar-fixed-top acrylicnavdark');
+					document.getElementById('school').style.color = "white";
+					document.getElementById('lodnav').style.background = "var(--bgpicnavd) center center";
+					document.getElementById('sunormoon').setAttribute('class', 'fa fa-sun-o');
+					document.getElementById('sunormoon').setAttribute('style', 'color:white');
+					document.getElementById('fapaint').setAttribute('style', 'color:white');
+					document.getElementById('facolor').setAttribute('style', 'color:white');
+					document.getElementById('fareset').setAttribute('style', 'color:white');
+					document.getElementById('faup').setAttribute('style', 'color:white');
+					document.getElementById('fadown').setAttribute('style', 'color:white');
+					document.getElementById('btn_mode').setAttribute('style',
+						'position: absolute;right:20px;top:5px;background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_reset').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_bg').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_color').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_close').setAttribute('style',
+						'position: absolute;right:20px;bottom:20px;background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_up').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('outlink').setAttribute('href', './sources/dark.css');
+					document.getElementById('choice').style.color = "white";
+					document.getElementById('myphoto').style.background = "rgba(0 ,0 ,0 ,0.25)";
+					document.getElementById('myid').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(128,128,128);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('myname').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(128,128,128);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('mycollege').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(128,128,128);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('gate').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(128,128,128);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5);border:none'
+					);
+					document.getElementById('myswitch').setAttribute('style', 'border-color:rgb(128,128,128);');
+					var x = document.getElementsByClassName('a');
+					var i;
+					for (i = 0; i < x.length; i++) {
+						x[i].style.color = "white";
+					}
+					if (man.checked != true)
+						document.getElementById('spass').setAttribute('style',
+							'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2); background-color: rgb(128,128,128) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-left:7.5px; margin-right:15px; padding:0;height:35px'
+						);
+					document.getElementById('popdiv').setAttribute('class', 'acrylic_dark');
+					document.getElementById('popdiv').style.background = "rgba(48, 48, 48, 0.75)";
+					document.getElementById('popdiv').style.border = "1px solid rgb(128,128,128)";
+					document.getElementById('pop_tit').style.color = "white";
+					document.getElementById('pop_con').style.color = "#A0A0A0";
+					document.getElementById('popfoot').setAttribute('style',
+						'background-color: rgb(32,32,32);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('close_btn').setAttribute('style',
+						'display:block;position:absolute;bottom:10px;right:20px;background-color: rgb(64,64,64) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0'
+					);
+					document.getElementById('close_con').color = "white";
+					document.getElementById('popdiv_alert').setAttribute('class', 'acrylic_dark');
+					document.getElementById('popdiv_alert').style.background = "rgba(48, 48, 48, 0.75)";
+					document.getElementById('popdiv_alert').style.border = "1px solid rgb(128,128,128)";
+					document.getElementById('pop_tit_alert').style.color = "white";
+					document.getElementById('pop_con_alert').style.color = "#A0A0A0";
+					document.getElementById('popfoot_alert').setAttribute('style',
+						'background-color: rgb(32,32,32);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('bgfil').style.opacity = "0.25";
+					document.getElementById('bgfil').style.backgroundColor = "black";
+					document.getElementById('foot').style.borderTop = "1px solid rgb(128, 128, 128)";
+				} else {
+					function plusReady() {
+						plus.navigator.setStatusBarStyle('dark');
+					}
+					if (window.plus) {
+						plusReady();
+					} else {
+						document.addEventListener('plusready', plusReady, false);
+					}
+					localStorage.setItem('mymode', 'light');
+					document.getElementById('pagecontainer').setAttribute("style",
+						"height: calc(100vh - 90px);background-color: rgb(224,224,224)");
+					document.getElementById('bg').setAttribute('src', './sources/background.jpg');
+					document.getElementById('card-mode').setAttribute('class', 'card-box acrylic');
+					document.getElementById('mynav').setAttribute('class', 'page-header navbar navbar-fixed-top acrylicnav');
+					document.getElementById('school').style.color = "black";
+					document.getElementById('lodnav').style.background = "var(--bgpicnavl) center center";
+					document.getElementById('sunormoon').setAttribute('class', 'fa fa-moon-o');
+					document.getElementById('sunormoon').setAttribute('style', 'color:black;');
+					document.getElementById('fapaint').setAttribute('style', 'color:black;');
+					document.getElementById('facolor').setAttribute('style', 'color:black;');
+					document.getElementById('fareset').setAttribute('style', 'color:black;');
+					document.getElementById('faup').setAttribute('style', 'color:black;');
+					document.getElementById('fadown').setAttribute('style', 'color:black;');
+					document.getElementById('btn_reset').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_bg').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_color').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_mode').setAttribute('style',
+						'position: absolute;right:20px;top:5px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_close').setAttribute('style',
+						'position: absolute;right:20px;bottom:20px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_up').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('outlink').setAttribute('href', './sources/light.css');
+					document.getElementById('choice').style.color = "black";
+					document.getElementById('myphoto').style.background = "rgba(255 ,255 ,255 ,0.25)";
+					document.getElementById('myid').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(192,192,192);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('myname').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(192,192,192);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('mycollege').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(192,192,192);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('gate').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(192,192,192);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5);border:none'
+					);
+					document.getElementById('myswitch').setAttribute('style', 'border-color:rgb(192,192,192);');
+					var x = document.getElementsByClassName('a');
+					var i;
+					for (i = 0; i < x.length; i++) {
+						x[i].style.color = "black";
+					}
+					if (man.checked != true)
+						document.getElementById('spass').setAttribute('style',
+							'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2); background-color: rgb(192,192,192) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-left:7.5px; margin-right:15px; padding:0;height:35px'
+						);
+					document.getElementById('popdiv').setAttribute('class', 'acrylic');
+					document.getElementById('popdiv').style.background = "rgba(255, 255, 255, 0.75)";
+					document.getElementById('popdiv').style.border = "1px solid rgb(192,192,192)";
+					document.getElementById('pop_tit').style.color = "black";
+					document.getElementById('pop_con').style.color = "#606060";
+					document.getElementById('popfoot').setAttribute('style',
+						'background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('close_btn').setAttribute('style',
+						'display:block;position:absolute;bottom:10px;right:20px;background-color: rgb(224,224,224) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0'
+					);
+					document.getElementById('close_con').color = "black";
+					document.getElementById('popdiv').setAttribute('class', 'acrylic');
+					document.getElementById('popdiv_alert').style.background = "rgba(255, 255, 255, 0.75)";
+					document.getElementById('popdiv_alert').style.border = "1px solid rgb(192,192,192)";
+					document.getElementById('pop_tit_alert').style.color = "black";
+					document.getElementById('pop_con_alert').style.color = "#606060";
+					document.getElementById('popfoot_alert').setAttribute('style',
+						'background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('bgfil').style.opacity = "0.25";
+					document.getElementById('bgfil').style.backgroundColor = "white";
+					document.getElementById('foot').style.borderTop = "1px solid rgb(192, 192, 192)";
+				}
+			}
+			window.onload = function() {
+
+				if (gateway == 'out') {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #800080 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'out';
+					document.getElementById('btn_in').innerHTML = "出";
+				} else {
+					document.getElementById('btn_in').setAttribute('style',
+						'font-size:16px;display:inline-block;background-color: #0dc500 !important;border: none !important;border-radius: 25px;height:40px;width:40px;padding:0'
+					);
+					gateway = 'in';
+					document.getElementById('btn_in').innerHTML = "入";
+				}
+				document.documentElement.style.cssText += JSON.parse(localStorage.getItem('thcolor'));
+				document.documentElement.style.cssText += JSON.parse(localStorage.getItem('bgstr'));
+				document.documentElement.style.cssText += JSON.parse(localStorage.getItem('bgstrnavl'));
+				document.documentElement.style.cssText += JSON.parse(localStorage.getItem('bgstrnavd'));
+				if (localStorage.getItem('cusbg') == 'true') {
+					document.getElementById('bgfil').style.visibility = "visible";
+				}
+				if (localStorage.getItem('che') != 'true') {
+					cheup();
+				}
+				if (localStorage.getItem('mymode') == null) {
+					var curmode = 'light';
+				} else var curmode = localStorage.getItem('mymode');
+				if (curmode == 'light') {
+					function plusReady() {
+						plus.navigator.setStatusBarStyle('dark');
+					}
+					if (window.plus) {
+						plusReady();
+					} else {
+						document.addEventListener('plusready', plusReady, false);
+					}
+					document.getElementById('pagecontainer').setAttribute("style",
+						"height: calc(100vh - 90px);background-color: rgb(224,224,224)");
+
+					document.getElementById('bg').setAttribute('src', './sources/background.jpg');
+					document.getElementById('card-mode').setAttribute('class', 'card-box acrylic');
+					document.getElementById('mynav').setAttribute('class', 'page-header navbar navbar-fixed-top acrylicnav');
+					document.getElementById('school').style.color = "black";
+					document.getElementById('lodnav').style.background = "var(--bgpicnavl) center center";
+					document.getElementById('sunormoon').setAttribute('class', 'fa fa-moon-o');
+					document.getElementById('sunormoon').setAttribute('style', 'color:black');
+					document.getElementById('fapaint').setAttribute('style', 'color:black');
+					document.getElementById('facolor').setAttribute('style', 'color:black');
+					document.getElementById('fareset').setAttribute('style', 'color:black');
+					document.getElementById('faup').setAttribute('style', 'color:black');
+					document.getElementById('fadown').setAttribute('style', 'color:black');
+					document.getElementById('btn_reset').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_bg').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_color').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_mode').setAttribute('style',
+						'position: absolute;right:20px;top:5px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_close').setAttribute('style',
+						'position: absolute;right:20px;bottom:20px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_up').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('outlink').setAttribute('href', './sources/light.css');
+					document.getElementById('choice').style.color = "black";
+					document.getElementById('myphoto').style.background = "rgba(255 ,255 ,255 ,0.25)";
+					document.getElementById('myid').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(192,192,192);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('myname').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(192,192,192);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('mycollege').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(192,192,192);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('gate').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(192,192,192);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5);border:none'
+					);
+					document.getElementById('myswitch').setAttribute('style', 'border-color: rgb(192,192,192);');
+					var x = document.getElementsByClassName('a');
+					var i;
+					for (i = 0; i < x.length; i++) {
+						x[i].style.color = "black";
+					}
+					if (man.checked != true)
+						document.getElementById('spass').setAttribute('style',
+							'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2); background-color: rgb(192,192,192) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-left:7.5px; margin-right:15px; padding:0;height:35px'
+						);
+					document.getElementById('popdiv').setAttribute('class', 'acrylic');
+					document.getElementById('popdiv').style.background = "rgba(255, 255, 255, 0.75)";
+					document.getElementById('popdiv').style.border = "1px solid rgb(192,192,192)";
+					document.getElementById('pop_tit').style.color = "black";
+					document.getElementById('pop_con').style.color = "#606060";
+					document.getElementById('popfoot').setAttribute('style',
+						'background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('close_btn').setAttribute('style',
+						'display:block;position:absolute;bottom:10px;right:20px;background-color: rgb(224,224,224) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0'
+					);
+					document.getElementById('close_con').color = "black";
+					document.getElementById('popdiv').setAttribute('class', 'acrylic');
+					document.getElementById('popdiv_alert').style.background = "rgba(255, 255, 255, 0.75)";
+					document.getElementById('popdiv_alert').style.border = "1px solid rgb(192,192,192)";
+					document.getElementById('pop_tit_alert').style.color = "black";
+					document.getElementById('pop_con_alert').style.color = "#606060";
+					document.getElementById('popfoot_alert').setAttribute('style',
+						'background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('bgfil').style.opacity = "0.25";
+					document.getElementById('bgfil').style.backgroundColor = "white";
+					document.getElementById('foot').style.borderTop = "1px solid rgb(192, 192, 192)";
+				} else {
+					function plusReady() {
+						plus.navigator.setStatusBarStyle('light');
+					}
+					if (window.plus) {
+						plusReady();
+					} else {
+						document.addEventListener('plusready', plusReady, false);
+					}
+					document.getElementById('pagecontainer').setAttribute("style",
+						"height: calc(100vh - 90px);background-color: rgb(32,32,32)");
+
+					document.getElementById('bg').setAttribute('src', './sources/background2.jpg');
+					document.getElementById('card-mode').setAttribute('class', 'card-box acrylic_dark');
+					document.getElementById('mynav').setAttribute('class',
+						'page-header navbar navbar-fixed-top acrylicnavdark');
+					document.getElementById('school').style.color = "white";
+					document.getElementById('lodnav').style.background = "var(--bgpicnavd) center center";
+					document.getElementById('sunormoon').setAttribute('class', 'fa fa-sun-o');
+					document.getElementById('sunormoon').setAttribute('style', 'color:white');
+					document.getElementById('fapaint').setAttribute('style', 'color:white');
+					document.getElementById('facolor').setAttribute('style', 'color:white');
+					document.getElementById('fareset').setAttribute('style', 'color:white');
+					document.getElementById('faup').setAttribute('style', 'color:white');
+					document.getElementById('fadown').setAttribute('style', 'color:white');
+					document.getElementById('btn_reset').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_bg').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_color').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_close').setAttribute('style',
+						'position: absolute;right:20px;bottom:20px;background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_up').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_mode').setAttribute('style',
+						'position: absolute;right:20px;top:5px;background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('outlink').setAttribute('href', './sources/dark.css');
+					document.getElementById('choice').style.color = "white";
+					document.getElementById('myphoto').style.background = "rgba(0 ,0 ,0 ,0.25)";
+					document.getElementById('myid').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(128,128,128);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('myname').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(128,128,128);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('mycollege').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(128,128,128);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5)'
+					);
+					document.getElementById('gate').setAttribute('style',
+						'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);outline-offset:-1px;outline-style: solid;outline-width:1px;outline-color:rgb(128,128,128);border-radius:100vh;text-align:center;width:100%;height:1.75em;background-color: rgba(255, 255, 255, 0.5);border:none'
+					);
+					document.getElementById('myswitch').setAttribute('style', 'border-color:rgb(128,128,128);');
+					var x = document.getElementsByClassName('a');
+					var i;
+					for (i = 0; i < x.length; i++) {
+						x[i].style.color = "white";
+					}
+					if (man.checked != true)
+						document.getElementById('spass').setAttribute('style',
+							'box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2); background-color: rgb(128,128,128) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-left:7.5px; margin-right:15px; padding:0;height:35px'
+						);
+					document.getElementById('popdiv').setAttribute('class', 'acrylic_dark');
+					document.getElementById('popdiv').style.background = "rgba(48, 48, 48, 0.75)";
+					document.getElementById('popdiv').style.border = "1px solid rgb(128,128,128)";
+					document.getElementById('pop_tit').style.color = "white";
+					document.getElementById('pop_con').style.color = "#A0A0A0";
+					document.getElementById('popfoot').setAttribute('style',
+						'background-color: rgb(32,32,32);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('close_btn').setAttribute('style',
+						'display:block;position:absolute;bottom:10px;right:20px;background-color: rgb(64,64,64) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0'
+					);
+					document.getElementById('close_con').color = "white";
+					document.getElementById('popdiv_alert').setAttribute('class', 'acrylic_dark');
+					document.getElementById('popdiv_alert').style.background = "rgba(48, 48, 48, 0.75)";
+					document.getElementById('popdiv_alert').style.border = "1px solid rgb(128,128,128)";
+					document.getElementById('pop_tit_alert').style.color = "white";
+					document.getElementById('pop_con_alert').style.color = "#A0A0A0";
+					document.getElementById('popfoot_alert').setAttribute('style',
+						'background-color: rgb(32,32,32);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('bgfil').style.opacity = "0.25";
+					document.getElementById('bgfil').style.backgroundColor = "black";
+					document.getElementById('foot').style.borderTop = "1px solid rgb(128, 128, 128)";
+				}
+			}
+			document.querySelector("#color").onchange = function() {
+				document.documentElement.style.cssText += "--themecolor: " + this.value;
+				localStorage.setItem('thcolor', JSON.stringify("--themecolor: " + this.value));
+			}
+
+			function allreset() {
+				document.getElementById('pop_tit').innerHTML = "是否清除用户配置？";
+				document.getElementById('pop_con').innerHTML = "这包括您的个人信息和主题配置。";
+				document.getElementById('yes_btn').innerHTML = "清除";
+				yes_btn.onclick = function() {
+					localStorage.clear();
+					window.location.reload();
+					document.getElementById('darkbackground').style.visibility = "hidden";
+					document.getElementById('darkbackground').style.opacity = "0";
+				}
+				close_btn.onclick = function() {
+					document.getElementById('darkbackground').style.visibility = "hidden";
+					document.getElementById('darkbackground').style.opacity = "0";
+				}
+				document.getElementById('darkbackground').style.visibility = "visible";
+				document.getElementById('darkbackground').style.opacity = "1";
+			}
+		</script>
+
+	</body>
 
 </html>

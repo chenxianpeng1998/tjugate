@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://serv.tju.edu.cn/ -->
+<html class="mdl-js">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style data-merge-styles="true"></style>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Security-Policy" content="font-src &#39;self&#39; b.yzcdn.cn data:">
+		<!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
+		<meta name="renderer" content="webkit">
+		<meta name="force-rendering" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="author" content="tjuis">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no"> -->
+		<!-- 适应刘海屏 -->
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0"> -->
+		<title>天津大学综合服务平台</title>
+		<!--[if lt IE 9]>
+ 	<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+ 	<script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ <![endif]-->
+		<!-- icons -->
+		<link href="./sources/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+		<link href="./sources/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="./sources/material-icon.css" rel="stylesheet" type="text/css">
+		<!--bootstrap -->
+		<link href="./sources/bootstrap.css" rel="stylesheet" type="text/css">
+		<!-- Material Design Lite CSS -->
+		<link href="./sources/material.min.css" rel="stylesheet">
+		<link href="./sources/material_style.css" rel="stylesheet">
+		<link href="./sources/animate.css" rel="stylesheet">
+		<!-- Theme Styles -->
+		<link href="./sources/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css">
+		<link href="./sources/style.css" rel="stylesheet" type="text/css">
+		<link href="./sources/plugins.min.css" rel="stylesheet" type="text/css">
+		<link href="./sources/responsive.css" rel="stylesheet" type="text/css">
+		<link href="./sources/theme-color.css" rel="stylesheet" type="text/css">
+		<!-- favicon -->
+		<link rel="shortcut icon" href="./sources/logo_3.ico">
+		<!-- 新增提示信息组件 -->
+		<link rel="stylesheet" href="./sources/jquery.toast.min.css">
+		<!-- sweetalert -->
+		<link href="./sources/sweetalert.css" rel="stylesheet">
+		<script src="./sources/jquery.min.js"></script>
+		<script src="./sources/jquery.cookie.js"></script>
+		<link href="./sources/mobile.css" rel="stylesheet">
+		<script type="text/javascript">
+			var _APP_URL_ROOT = '..';
+			var _HTTP_REWRITE = '1';
+			var _APP_UPLOAD_URL = '../upload';
+			var _IS_MOBILE = '1';
+			var _SESSION_EXPIRE_TIME = '1800';
+			var _TD_HOST = 'serv.tju.edu.cn';
+		</script>
+		<!--link href="./sources/spec_20da.css" rel="stylesheet"-->
+		<script src="./sources/head.js"></script>
+		<script type="text/javascript" src="./sources/codeback.js"></script>
+		<style>
+			.demo {
+				padding: 10px;
+			}
+
+			.demo-block {
+				width: 100%;
+				height: 16px;
+				background-color: #dcdcdc;
+				margin-bottom: 10px;
+			}
+
+			.demo-block-h-2 {
+				height: 32px;
+			}
+
+			.demo-block-h-4 {
+				height: 64px;
+			}
+
+			.demo-block-3 {
+				width: 30%;
+			}
+
+			.demo-block-5 {
+				width: 50%;
+			}
+
+			.demo-block-8 {
+				width: 80%;
+			}
+		</style>
+		<link href="./sources/mindex.81646.css" rel="stylesheet">
+		<style type="text/css">
+			.comp-full-calendar {
+				padding: 20px;
+				background: #fff;
+				max-width: 960px;
+				margin: 0 auto;
+			}
+
+			.comp-full-calendar ul,
+			.comp-full-calendar p {
+				margin: 0;
+				padding: 0;
+				font-size: 14px;
+			}
+		</style>
+		<style type="text/css">
+			.full-calendar-body {
+				margin-top: 20px;
+			}
+
+			.full-calendar-body .weeks {
+				display: flex;
+				border-top: 1px solid #e0e0e0;
+				border-bottom: 1px solid #e0e0e0;
+				border-left: 1px solid #e0e0e0;
+			}
+
+			.full-calendar-body .weeks .week {
+				flex: 1;
+				text-align: center;
+				border-right: 1px solid #e0e0e0;
+			}
+
+			.full-calendar-body .dates {
+				position: relative;
+			}
+
+			.full-calendar-body .dates .week-row {
+				border-left: 1px solid #e0e0e0;
+				display: flex;
+			}
+
+			.full-calendar-body .dates .week-row .day-cell {
+				flex: 1;
+				min-height: 100px;
+				padding: 4px;
+				border-right: 1px solid #e0e0e0;
+				border-bottom: 1px solid #e0e0e0;
+			}
+
+			.full-calendar-body .dates .week-row .day-cell .day-number {
+				text-align: right;
+			}
+
+			.full-calendar-body .dates .week-row .day-cell.today {
+				background-color: #fcf8e3;
+			}
+
+			.full-calendar-body .dates .week-row .day-cell.not-cur-month .day-number {
+				color: rgba(0, 0, 0, 0.24);
+			}
+
+			.full-calendar-body .dates .dates-events {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				width: 100%;
+			}
+
+			.full-calendar-body .dates .dates-events .events-week {
+				display: flex;
+			}
+
+			.full-calendar-body .dates .dates-events .events-week .events-day {
+				cursor: pointer;
+				flex: 1;
+				min-height: 109px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.full-calendar-body .dates .dates-events .events-week .events-day .day-number {
+				text-align: right;
+				padding: 4px 5px 4px 4px;
+				opacity: 0;
+			}
+
+			.full-calendar-body .dates .dates-events .events-week .events-day.not-cur-month .day-number {
+				color: rgba(0, 0, 0, 0.24);
+			}
+
+			.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item {
+				cursor: pointer;
+				font-size: 12px;
+				background-color: #C7E6FD;
+				margin-bottom: 2px;
+				color: rgba(0, 0, 0, 0.87);
+				padding: 0 0 0 4px;
+				height: 18px;
+				line-height: 18px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-start {
+				margin-left: 4px;
+			}
+
+			.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-end {
+				margin-right: 4px;
+			}
+
+			.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-opacity {
+				opacity: 0;
+			}
+
+			.full-calendar-body .dates .dates-events .events-week .events-day .event-box .more-link {
+				cursor: pointer;
+				padding-left: 8px;
+				padding-right: 2px;
+				color: rgba(0, 0, 0, 0.38);
+				font-size: 14px;
+			}
+
+			.full-calendar-body .dates .more-events {
+				position: absolute;
+				width: 150px;
+				z-index: 2;
+				border: 1px solid #eee;
+				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+			}
+
+			.full-calendar-body .dates .more-events .more-header {
+				background-color: #eee;
+				padding: 5px;
+				display: flex;
+				align-items: center;
+				font-size: 14px;
+			}
+
+			.full-calendar-body .dates .more-events .more-header .title {
+				flex: 1;
+			}
+
+			.full-calendar-body .dates .more-events .more-header .close {
+				margin-right: 2px;
+				cursor: pointer;
+				font-size: 16px;
+			}
+
+			.full-calendar-body .dates .more-events .more-body {
+				height: 140px;
+				overflow: hidden;
+			}
+
+			.full-calendar-body .dates .more-events .more-body .body-list {
+				height: 120px;
+				padding: 5px;
+				overflow: auto;
+				background-color: #fff;
+			}
+
+			.full-calendar-body .dates .more-events .more-body .body-list .body-item {
+				cursor: pointer;
+				font-size: 12px;
+				background-color: #C7E6FD;
+				margin-bottom: 2px;
+				color: rgba(0, 0, 0, 0.87);
+				padding: 0 0 0 4px;
+				height: 18px;
+				line-height: 18px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		</style>
+		<style type="text/css">
+			.full-calendar-header {
+				display: flex;
+				align-items: center;
+			}
+
+			.full-calendar-header .header-left,
+			.full-calendar-header .header-right {
+				flex: 1;
+			}
+
+			.full-calendar-header .header-center {
+				flex: 3;
+				text-align: center;
+			}
+
+			.full-calendar-header .header-center .title {
+				margin: 0 10px;
+			}
+
+			.full-calendar-header .header-center .prev-month,
+			.full-calendar-header .header-center .next-month {
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body
+		class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
+		<div class="page-wrapper lingan_1" id="lin_list_1">
+			<!-- start header 顶部-->
+			<!-- start header 顶部-->
+			<div class="page-header navbar navbar-fixed-top">
+				<div id="exc4" class="page-header-inner pc_modify_css_setting_theme_color_Skyblue">
+					<!-- logo start -->
+					<div class="page-logo">
+						<img src="./sources/logo_2.png" style="height: 40px">
+					</div>
+					<!-- logo end -->
+					<!-- <form class="search-form-opened n-s" style="display:none;" id="global_search" onkeydown="if(event.keyCode==13) return false;">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="搜索..." name="search">
+                <span class="input-group-btn">
+                    <a href="#" class="btn submit"><i class="icon-magnifier"></i></a>
+                </span>
+            </div>
+        </form> -->
+					<!-- start header menu -->
+					<div class="top-menu" style="position:relative;">
+
+						<ul class="nav navbar-nav pull-right" style="padding-right:5px;">
+
+							<!-- <li class="dropdown dropdown-extended dropdown-notification a-search">
+                    <a href="javascript:;" class='dropdown-toggle'>
+                        <i class="icon-magnifier"></i>
+                    </a>
+                </li> -->
+
+							<!-- <li class="dropdown dropdown-extended dropdown-notification n-h" id="header_notification_bar">
+                    <a class='dropdown-toggle' href="javascript:goUrl(openUrl('index/qrcode'));" style="padding-top:18px;">
+                        <img src="../themes/mobile/assets/img/s1.png" style="height:17px;width:17px;">
+                    </a>
+                </li> -->
+
+							<li class="dropdown dropdown-extended dropdown-notification n-h"
+								id="header_notification_bar">
+								<a href="https://serv.tju.edu.cn/#" class="dropdown-toggle" data-toggle="dropdown"
+									data-hover="dropdown" data-close-others="true">
+									<i class="fa fa-bell-o"></i>
+									<span class="badge headerBadgeColor1" id="td_top_message_num"
+										style="display: none;"> 0
+									</span>
+								</a>
+								<ul class="dropdown-menu" id="top_menu_message">
+									<li class="external">
+										<h3><span class="bold">通知</span></h3>
+										<span class="notification-label purple-bgcolor"
+											id="td_top_message_title">有0个新通知</span>
+									</li>
+									<li>
+										<div class="slimScrollDiv"
+											style="position: relative; overflow: hidden; width: auto;">
+											<ul class="dropdown-menu-list small-slimscroll-style" id="td_top_message_li"
+												style="overflow: hidden; width: auto;"></ul>
+											<div class="slimScrollBar"
+												style="background: rgb(158, 165, 171); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;">
+											</div>
+											<div class="slimScrollRail"
+												style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+											</div>
+										</div>
+										<div class="dropdown-menu-footer">
+											<a href="javascript:void(0)"> 查看所有通知 </a>
+										</div>
+									</li>
+								</ul>
+							</li>
+
+							<li class="dropdown dropdown-user n-h" id="header_user_bar">
+								<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"
+									data-hover="dropdown" data-close-others="true">
+									<img id="imghead" class="img-circle"
+										style="object-fit:cover;width:unset;border-radius:25%"
+										data-savepage-currentsrc="http://serv.tju.edu.cn/user/headImg"
+										data-savepage-src="../user/headImg" src="./sources/head.png">
+									<i class="fa fa-angle-down"></i>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-default" style="min-width:110px;width:110px">
+									<li>
+										<a href="./center.html">
+											<span id="exc2" class="username"></span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="fa fa-street-view"></i> 位置报送
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="fa fa-key"></i> 修改密码
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="fa fa-envelope-o"></i> 意见反馈
+										</a>
+									</li>
+									<li style="width:100px">
+										<a href="javascript:void(0)">
+											<i class="icon-logout"></i> 退出
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="change_user_group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">机构切换</h4>
+						</div>
+						<div class="modal-body">
+							<div class="table-scrollable">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>机构名称</th>
+											<th>简称</th>
+										</tr>
+									</thead>
+									<tbody></tbody>
+								</table>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">不切换</button>
+							<button type="button" class="btn btn-info">切换</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="./sources/top.js"></script>
+			<!-- jquery.qrcode.js -->
+			<script src="./sources/jquery.qrcode.min.js"></script>
+			<!-- start page container 起始页容器-->
+			<div id="exc5" class="page-container">
+				<div style="display: none; justify-content: center; align-items: center;">松开刷新</div>
+				<!-- start sidebar menu 左侧导航栏-->
+				<script src="./sources/mobile.js"></script>
+				<script>
+					/************** 移动端首页，配合静态化改造后的修改*************/
+					$(function() {
+						if (window.SERV_TJU) {
+							window.SERV_TJU.ready(function(e) {
+								//校验回话有效后,设定刷新频率
+								mobilePush(e.tf);
+							})
+						}
+					})
+				</script> <!-- start page content 内容开始-->
+				<div data-v-0a24f9d1="" id="app">
+					<div data-v-0a24f9d1="" class="row">
+						<div data-v-0a24f9d1="" class="col-12 c-c">
+							<div data-v-0a24f9d1="" class="row justify-content-center c-a">
+								<div data-v-0a24f9d1="" class="f-item active-item"
+									style="background-color: rgb(103, 186, 234); flex: 0 0 33.3333%; max-width: 33.3333%;">
+									<div data-v-0a24f9d1="" class="badge-box f-item-f"><span data-v-0a24f9d1=""
+											class="i-c"><i data-v-0a24f9d1="" class="fa fa-file-pdf-o"></i>
+											<!---->
+										</span></div>
+									<div data-v-0a24f9d1="" class="f-item-l f-item-f">审批中心</div>
+								</div>
+								<div data-v-0a24f9d1="" class="f-item"
+									style="background-color: rgb(255, 195, 0); flex: 0 0 33.3333%; max-width: 33.3333%;">
+									<div data-v-0a24f9d1="" class="badge-box f-item-f"><span data-v-0a24f9d1=""
+											class="i-c"><i data-v-0a24f9d1="" class="fa fa-cubes"></i>
+											<!---->
+										</span></div>
+									<div data-v-0a24f9d1="" class="f-item-l f-item-f">事项办理</div>
+								</div>
+								<div data-v-0a24f9d1="" class="f-item"
+									style="background-color: rgb(233, 78, 22); flex: 0 0 33.3333%; max-width: 33.3333%;">
+									<div data-v-0a24f9d1="" class="badge-box f-item-f"><span data-v-0a24f9d1=""
+											class="i-c"><i data-v-0a24f9d1="" class="fa fa-bullhorn"></i>
+											<!---->
+										</span></div>
+									<div data-v-0a24f9d1="" class="f-item-l f-item-f">通知信息</div>
+								</div>
+							</div>
+						</div>
+						<div data-v-0a24f9d1="" class="col-12 t-tips"></div>
+						<div data-v-0a24f9d1="" class="col-12">
+							<div data-v-401a3d58="" data-v-0a24f9d1="" class="row tab1">
+								<div data-v-401a3d58="" class="col-12">
+									<div data-v-6ba79dc0="" data-v-401a3d58="" class="s-1 b-r">
+										<form data-v-6ba79dc0="" action="https://serv.tju.edu.cn/#">
+											<div data-v-6ba79dc0="" class="van-search">
+												<div data-v-6ba79dc0=""
+													class="van-search__content van-search__content--square">
+													<div data-v-6ba79dc0=""
+														class="van-cell van-cell--borderless van-field">
+														<div class="van-field__left-icon"><i
+																class="van-icon van-icon-search">
+																<!---->
+															</i></div>
+														<div
+															class="van-cell__value van-cell__value--alone van-field__value">
+															<div class="van-field__body"><input type="search"
+																	placeholder="请输入搜索关键词" class="van-field__control"
+																	spellcheck="false" data-ms-editor="true"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div data-v-401a3d58="" class="col-12 t-block">
+									<!---->
+								</div>
+								<div data-v-401a3d58="" class="col-12 swipe-box driver-box">
+									<div data-v-401a3d58="" class="c-i2">
+										<div data-v-401a3d58="" class="c-i-i active" style="flex-basis: 50%;"><span
+												data-v-401a3d58=""><span data-v-401a3d58=""><img data-v-401a3d58=""
+														src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAQCAYAAAAbBi9cAAABI0lEQVQ4T62TsS4FQRSGv7/UadQUKhIe4BYoROh1CnI7EoVEo1J7AIVCp/EAlK5aFCTUKpLbKDzAL2ftXmvszt7iTjOTmTPfnPOff0Q5bK9W665Z0iCNke1p4LPrcnL+DvQkvVX7AToFViStjQuzfQfcS4q7xfgDGqO8oaTXLAg4AK6BxVxmkuLxfEYTK21iINtR2kwL8FbSWZzZnqt3rEnsURcaYC/lXg9YBqL1D5LO/4FypdneBG7KmD5wVDbmStLOWD6yPQU8A/PF67+dq37DRuojJ1kNwqi2l4Cnkfl+QCHDArANHHYZ8lHSVwoCLoCPVlCbRmlpDXFFafvAMbCXEXsIzNbErodeSuqr9MUJsJ4BFR/UduixBewCYYfwViTBNwLApmsjaQhiAAAAAElFTkSuQmCC"
+														alt="" class="t-img"></span> <span
+													data-v-401a3d58="">我的待办</span></span></div>
+										<div data-v-401a3d58="" class="c-i-i" style="flex-basis: 50%;"><span
+												data-v-401a3d58=""><span data-v-401a3d58=""><img data-v-401a3d58=""
+														src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/UlEQVQ4T7WTsS4EYRSFv9PJPoVSq6C1HmJWQqPnHXgAicJTyKpUOjoSic5GwRNsrRHJJ/9kR2ZjzUzBX/7J/e6595wb9RQ4Yfh7Bq6SlDqiCuwOr2cHGCepa74BSe6GQNSidjVgoeY3TpE+Aar/U/AXI9x2QOZJJn07GHepKIvuBAwcYR0YJZn9sFFtj1BLbkPVDeAzyWvzv5QDdWmEdjbUe2AN+ADekuwPDpJaJZk2XdVDYCvJUW8S1QvguISoQNQRsA0UYNULKF3VyyR7LQWbwFMNXcS3LGu+woX3JI/qA3DTXODCyllRVABd5zxtnFCvgRfgADhLcl4afgFlj7egOKyPEgAAAABJRU5ErkJggg=="
+														alt="" class="t-img"></span> <span
+													data-v-401a3d58="">流转文件</span></span></div>
+									</div>
+									<div data-v-3c6e8b76="" data-v-401a3d58="" class="swipe van-swipe">
+										<div class="van-swipe__track"
+											style="transition-duration: 0ms; transform: translateX(0px); width: 1012px;">
+											<div data-v-3c6e8b76="" class="van-swipe-item" style="width: 506px;">
+												<div data-v-3c6e8b76="" class="body">
+													<div data-v-3c6e8b76="" class="item">
+														<div data-v-401a3d58="" class="head">
+															<!---->
+															<!----> <span data-v-401a3d58="" class="e-name"> </span>
+															<!---->
+														</div>
+														<div data-v-401a3d58="" class="title txt">
+															<p data-v-401a3d58="" class="e-title"> </p>
+															<p data-v-401a3d58="" class="e-title-sub"></p>
+															<!----> <a data-v-401a3d58=""
+																href="https://serv.tju.edu.cn/formdata/open?sid=%20&amp;lid=undefined&amp;from=index"
+																title=" undefined" class="t-icon"><i data-v-401a3d58=""
+																	class="fa fa fa-chevron-right"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div data-v-3c6e8b76="" class="van-swipe-item" style="width: 506px;">
+												<div data-v-3c6e8b76="" class="body">
+													<div data-v-3c6e8b76="" class="item">
+														<div data-v-401a3d58="" class="head">
+															<!---->
+															<!----> <span data-v-401a3d58="" class="e-name"> </span>
+															<!---->
+														</div>
+														<div data-v-401a3d58="" class="title txt">
+															<p data-v-401a3d58="" class="e-title"> </p>
+															<p data-v-401a3d58="" class="e-title-sub"></p>
+															<!----> <a data-v-401a3d58=""
+																href="https://serv.tju.edu.cn/formdata/open?sid=%20&amp;lid=undefined&amp;from=index"
+																title=" undefined" class="t-icon"><i data-v-401a3d58=""
+																	class="fa fa fa-chevron-right"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div data-v-3c6e8b76="">
+											<!---->
+										</div>
+									</div>
+									<!---->
+									<!---->
+									<!---->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- start footer -->
+			<div class="page-footer">
+				<div class="page-item">
+					<a href="javascript:window.location.href = './main.html'">
+						<i class=" page-item-fa fa fa-home"></i>
+						<div class="page-item-title">首页</div>
+					</a>
+				</div>
+				<div class="page-item">
+					<a href="javascript:window.location.href = './qrcode.html'">
+						<i class=" page-item-fa fa fa-qrcode"></i>
+						<div class="page-item-title">二维码</div>
+					</a>
+				</div>
+				<div class="page-item page-center">
+					<a href="javascript:void(0)" onclick="openBarcodeCustom()">
+						<div class="page-cre">
+							<div class="page-item-fa">
+								<div class="img-box">
+									<img src="./sources/s2.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="page-item-title">扫一扫</div>
+					</a>
+				</div>
+				<div class="page-item">
+					<a href="javascript:void(0)">
+						<i class=" page-item-fa fa fa-envelope"></i>
+						<div class="page-item-title">收件箱</div>
+					</a>
+
+
+				</div>
+				<div class="page-item">
+					<a href="javascript:window.location.href = './center.html'">
+						<i class=" page-item-fa fa fa-user"></i>
+						<div class="page-item-title">我的</div>
+					</a>
+				</div>
+			</div>
+			<!--引入二选一提示信息框-->
+			<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="confirm_modal"
+				class="modal fade">
+				<div class="modal-dialog" role="document" style="top:35%;">
+					<div class="modal-content">
+						<div class="modal-body" style="min-height: 85px;">
+							<p style="margin: 0px;padding: 15px ; text-align: center;">
+								<i class="fa fa-exclamation-circle"
+									style="color:#ffc107;font-size:24px;margin-right: 25px;position: relative;top:2px;"></i>
+								<span class="message" style="font-size: 18px;">您还没有填写提示信息...</span>
+							</p>
+						</div>
+						<div class="modal-footer" style="padding-top: 0px;">
+							<button type="button" data-dismiss="modal"
+								class="btn btn-primary confirm-operation">确认</button>
+							<button type="button" data-dismiss="modal"
+								class="btn btn-secondary cancel-operation">取消</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				function openBarcodeCustom() {
+					function plusReady() {
+						createWithoutTitle('barcode.html', {
+							titleNView: {
+								type: 'float',
+								backgroundColor: '#00000000',
+								autoBackButton: false,
+								titleText: "",
+								buttons: [{
+									type: 'none',
+									text: "返回",
+									color: '#FFFFFF',
+									fontSize: '16px',
+									float: 'left',
+									width: 'auto',
+									colorPressed: '#FFFFFF',
+									onclick: "javascript:plus.webview.currentWebview().evalJS('ws.close();')"
+								}],
+							}
+						});
+					}
+					if (window.plus) {
+						plusReady();
+					} else {
+						document.addEventListener('plusready', plusReady, false);
+					}
+				}
+				//扫描成功后回调
+				function scaned(t, r, f) {
+					if (localStorage.getItem('gatetype') == "auto") {
+						if (r ==
+							"http://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRUZmhiZmRNZVU2QjRBZE0yVGZVOTQxT2FEM1FleDNNOVQ3RTZ3Nk1jQTg9YT02N2Rh" ||
+							r ==
+							"https://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRUZmhiZmRNZVU2QjRBZE0yVGZVOTQxT2FEM1FleDNNOVQ3RTZ3Nk1jQTg9YT02N2Rh"
+						) {
+							localStorage.setItem('whigate', 'east_enter');
+							window.location.href = "./pass.html";
+						} else if (r ==
+							"http://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRUZmhiZmRNZWs2QjRBZE0yVGZVOTQxT2FEM1FleDNNOVQ3RTYwNk9jUTg9YT02N2Rh" ||
+							r ==
+							"https://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRUZmhiZmRNZWs2QjRBZE0yVGZVOTQxT2FEM1FleDNNOVQ3RTYwNk9jUTg9YT02N2Rh"
+						) {
+							localStorage.setItem('whigate', 'east_leave');
+							window.location.href = "./pass.html";
+						} else if (r ==
+							"http://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRUZmxiZmRNZVU2QjRBZE0yVGZVOTQxT2FEM1FleDNNOVQ3azZ4Nk5jZzg9YT02N2Rh" ||
+							r ==
+							"https://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRUZmxiZmRNZVU2QjRBZE0yVGZVOTQxT2FEM1FleDNNOVQ3azZ4Nk5jZzg9YT02N2Rh"
+						) {
+							localStorage.setItem('whigate', 'west_enter');
+							window.location.href = "./pass.html";
+						} else if (r ==
+							"http://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRUZmxiZmRNZWs2QjRBZE0yVGZZOTIxTWF6M0llejNOOUQ3WTZ3Nk5jUTg9YT02N2Rh" ||
+							r ==
+							"https://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRUZmxiZmRNZWs2QjRBZE0yVGZZOTIxTWF6M0llejNOOUQ3WTZ3Nk5jUTg9YT02N2Rh"
+						) {
+							localStorage.setItem('whigate', 'west_leave');
+							window.location.href = "./pass.html";
+						} else if (r ==
+							"http://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRqZkZiZmRNZVU2QjRBZE0yVGZZOTIxTWFUM01ldzNOOUQ3TTYwNk5jUTg9YT02N2Rh" ||
+							r ==
+							"https://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRqZkZiZmRNZVU2QjRBZE0yVGZZOTIxTWFUM01ldzNOOUQ3TTYwNk5jUTg9YT02N2Rh"
+						) {
+							localStorage.setItem('whigate', 'north_enter');
+							window.location.href = "./pass.html";
+						} else if (r ==
+							"http://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRqZkZiZmRNZWs2QjRBZE0yVGZZOTIxTWFUM01ldzNOOUQ3TTYyNk1jdzg9YT02N2Rh" ||
+							r ==
+							"https://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRqZkZiZmRNZWs2QjRBZE0yVGZZOTIxTWFUM01ldzNOOUQ3TTYyNk1jdzg9YT02N2Rh"
+						) {
+							localStorage.setItem('whigate', 'north_leave');
+							window.location.href = "./pass.html";
+						} else if (r ==
+							"http://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRqZkJiZmRNZVU2QjRBZE0yVGZZOXkxTmFEM2tlejNNOWo3YzZ3Nk5jUTg9YT02N2R" ||
+							r ==
+							"https://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRqZkJiZmRNZVU2QjRBZE0yVGZZOXkxTmFEM2tlejNNOWo3YzZ3Nk5jUTg9YT02N2R"
+						) {
+							localStorage.setItem('whigate', 'lilwest_enter');
+							window.location.href = "./pass.html";
+						} else if (r ==
+							"http://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRqZkJiZmRNZWs2QjRBZE0yVGZZOXkxTmFEM2tlejNNOWo3YzZ5Nk5jZzg9YT02N2Rh" ||
+							r ==
+							"https://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRqZkJiZmRNZWs2QjRBZE0yVGZZOXkxTmFEM2tlejNNOWo3YzZ5Nk5jZzg9YT02N2Rh"
+						) {
+							localStorage.setItem('whigate', 'lilwest_leave');
+							window.location.href = "./pass.html";
+						} else {
+							alert("识别失败，请手动选择通行方式！");
+							window.location.href = "./index.html";
+						}
+					} else window.location.href = "./pass.html";
+				}
+			</script>
+			<script type="text/javascript">
+				/**
+				 * 二选一
+				 * @param message   消息
+				 * @param fn1       确认按钮回调函数
+				 * @param fn2       取消按钮回调函数
+				 * @param time      显示时间
+				 * @param text1     确认按钮文字
+				 * @param text2     取消按钮文字
+				 */
+				function confirmModal(message, fn1, fn2, time, text1, text2) {
+
+					if (fn2 == null) fn2 = '';
+					if (time == null) time = false;
+					if (text1 == null) text1 = '确认';
+					if (text2 == null) text2 = '取消';
+
+					var isConfirm;
+
+					var $modal = $('#confirm_modal').unbind("show.bs.modal").on('show.bs.modal', function() {
+
+						$(this).find('.message').text(message);
+						$(this).find('.confirm-operation').text(text1);
+						$(this).find('.cancel-operation').text(text2);
+
+						$(this).find('.confirm-operation').unbind('click').click(function() {
+							isConfirm = true;
+							$modal.modal();
+						});
+
+						$(this).find('.cancel-operation').unbind('click').click(function() {
+							isConfirm = false;
+							$modal.modal();
+						});
+
+					}).unbind('hide.bs.modal').on('hide.bs.modal', function() {
+
+						if (isConfirm == undefined) return false;
+
+					}).unbind('hidden.bs.modal').on('hidden.bs.modal', function() {
+
+						if (isConfirm) {
+							if (typeof fn1 == 'function') fn1();
+						} else if (typeof fn2 == 'function') fn2();
+
+					}).modal();
+
+					if (time !== false) {
+						setTimeout(function() {
+							$('#confirm_modal').modal('hide');
+						}, time)
+					}
+
+				}
+			</script>
+			<script>
+				// $(".page-bar").remove();
+			</script>
+			<div id="extwaiokist" style="display:none" v="cbopg" q="5757a139" c="420.0" i="424" u="10.29" s="05052216"
+				d="1" w="false" e="" m="BMe=" vn="3ges2">
+				<div id="extwaigglbit" style="display:none" v="cbopg" q="5757a139" c="420.0" i="424" u="10.29"
+					s="05052216" d="1" w="false" e="" m="BMe="></div>
+			</div>
+		</div>
+
+		<!-- start js include path -->
+		<style>
+			.modal.left .modal-dialog,
+			.modal.right .modal-dialog {
+				position: fixed;
+				margin: auto;
+				width: 320px;
+				height: 100%;
+				-webkit-transform: translate3d(0%, 0, 0);
+				-ms-transform: translate3d(0%, 0, 0);
+				-o-transform: translate3d(0%, 0, 0);
+				transform: translate3d(0%, 0, 0);
+			}
+
+			.modal.left .modal-content,
+			.modal.right .modal-content {
+				height: 100%;
+				overflow-y: auto;
+			}
+
+			.modal.left .modal-body,
+			.modal.right .modal-body {
+				/* padding: 15px 15px 80px; */
+			}
+
+			/*Left*/
+			.modal.left.fade .modal-dialog {
+				left: -320px;
+				-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+				-moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+				-o-transition: opacity 0.3s linear, left 0.3s ease-out;
+				transition: opacity 0.3s linear, left 0.3s ease-out;
+			}
+
+			.modal.left.fade.in .modal-dialog {
+				left: 0;
+			}
+
+			/*Right*/
+			.modal.right.fade .modal-dialog {
+				right: -320px;
+				-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+				-moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+				-o-transition: opacity 0.3s linear, right 0.3s ease-out;
+				transition: opacity 0.3s linear, right 0.3s ease-out;
+			}
+
+			.modal.right.fade.in .modal-dialog {
+				right: 0;
+			}
+		</style>
+		<!-- 弹窗 -->
+		<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="common-select"
+			class="modal right fade">
+			<div class="modal-dialog" role="document" style="width:100%;margin:0;max-width:none;height:100%">
+				<div class="modal-content" style="height:100%">
+					<div class="modal-header">
+						<h4 class="modal-title">&nbsp;</h4>
+					</div>
+					<div class="modal-body" style="
+                height:-moz-calc(100% - 133px);
+                height:-webkit-calc(100% - 133px);
+                height:calc(100% - 133px);
+                overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
+                padding:0 5px;
+            "></div>
+					<div class="modal-footer">
+						<div class="row" style="width:100%;">
+							<div class="col-lg-12" style="padding-left: 0px;">
+								<button type="button" class="btn btn-success" data-dismiss="modal"><i
+										class="fa fa-check"></i>确认选择</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal"><i
+										class="fa fa-times"></i> 取消</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./sources/common.js"></script>
+		<!-- start js include path -->
+		<script src="./sources/popper.js"></script>
+		<script src="./sources/jquery.blockui.min.js"></script>
+		<script src="./sources/jquery.slimscroll.js"></script>
+		<script src="./sources/jquery.scrollTo.js"></script>
+
+		<!-- bootstrap -->
+		<script src="./sources/bootstrap.min.js"></script>
+		<script src="./sources/bootstrap-switch.min.js"></script>
+		<!-- Common js-->
+		<script src="./sources/app.js"></script>
+		<script src="./sources/layout.js"></script>
+		<script src="./sources/theme-color.js"></script>
+		<!-- Material -->
+		<script src="./sources/material.min.js"></script>
+		<!-- end js include path -->
+
+		<!-- validation 插件-->
+		<script src="./sources/jquery.validate.js"></script>
+		<script src="./sources/additional-methods.js"></script>
+		<script src="./sources/jquery.form.js"></script>
+		<script src="./sources/validator.js"></script>
+		<script src="./sources/verify_decimal.js"></script>
+		<script src="./sources/messages_zh.js"></script>
+		<!-- sweetalert -->
+		<script src="./sources/sweetalert.min.js"></script>
+
+		<!-- polyfill -->
+		<script src="./sources/FormData.js"></script>
+		<script src="./sources/polyfill.min.js"></script>
+
+		<!--添加共用提示信息-->
+		<script src="./sources/jquery.toast.min.js"></script>
+
+		<!-- Table手机端扩展-->
+		<script src="./sources/tableExtend.js"></script>
+		<script src="./sources/List.js"></script>
+
+		<div class="modal fade" id="phy_login" tabindex="-1" role="dialog" aria-labelledby="phy_login_Label">
+			<div class="modal-dialog" role="document" style="max-width:800px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="phy_login_Label">物化帐号登录</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group row">
+								<label class="control-label col-md-3">帐号ID： <span class="required"> * </span> </label>
+								<div class="col-md-7">
+									<input type="text" class="form-control" name="phy_id" spellcheck="false"
+										data-ms-editor="true">
+
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="control-label col-md-3">密码： <span class="required"> * </span> </label>
+								<div class="col-md-7">
+									<input type="password" class="form-control" name="phy_password">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal"
+							id="btn_close_phy_login">关闭</button>
+						<button type="button" class="btn btn-info" id="btn_save_phy_login">登录</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function openUrl(path, params, root_path) {
+				let _url = '';
+				if (typeof root_path != 'undefined' && root_path != '') {
+					_url = root_path + '/' + path
+					if (_url.search(/^http(s|):\/\/\S*?\//) == -1) {
+						_url = window.location.protocol + '//' + _url
+					}
+				} else {
+					_url = _APP_URL_ROOT + '/' + path
+				}
+				var _p = '';
+				var _i = 0;
+				$.each(params, function(i, e) {
+					if (_i == 0) {
+						if (_HTTP_REWRITE == '1') {
+							_p += '?';
+						} else {
+							_p += '&';
+						}
+					} else {
+						_p += '&';
+					}
+					_p += i + '=' + e;
+					_i++;
+				});
+				_url = _url + _p;
+				return _url;
+			}
+
+			function PhyCode() {
+				$("#phy_login").unbind("show.bs.modal").on("show.bs.modal", function() {
+					$(this).find("#btn_save_phy_login").unbind("click").click(function() {
+						var _id = $("input[name=phy_id]").val();
+						var _pwd = $("input[name=phy_password]").val();
+						if (_id == '' || _pwd == '') {
+							Toast('帐号ID或密码不能为空！', 2, 'mid-center', '错误');
+							return false;
+						}
+						window.location.replace(openUrl('welcome/sweep'));
+						// $.ajax({
+						//     type : 'post',
+						//     url : openUrl(''),
+						//     dataType : 'jsonp',
+						//     data:{"id":_id,'password':_pwd},
+						//     success:function(e){
+
+						//     },
+						//     error:function(){
+						// 	    Toast('信息异常！',2,'mid-center','失败');
+						//     }
+						// })
+					})
+				}).modal();
+			}
+		</script>
+		<script src="./sources/jquery.qrcode.min.js"></script>
+		<script src="./sources/utils.js"></script>
+		<div class="modal fade" id="dialog_qrcode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content"
+					style="background-image: url(&quot;/upload/bg.jpg&quot;); background-size: cover;">
+					<div class="modal-body">
+						<div class="qr-error"
+							style="margin-top: 10%; text-align: center; font-size: 40px; display: none;">2
+						</div>
+						<iframe width="100%" class="qr-success" id="aa" style="display: none;"
+							src="./sources/saved_resource.html"></iframe>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-info">刷新</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="iot_auth" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document" style="max-width:800px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">物化账户授权</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group row">
+								<label class="control-label col-md-3">账户ID： <span class="required"> * </span> </label>
+								<div class="col-md-7">
+									<input type="text" class="form-control" name="phy_id" placeholder="请输入物联账户ID"
+										spellcheck="false" data-ms-editor="true">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="control-label col-md-3">密码：<span class="required"> * </span> </label>
+								<div class="col-md-7">
+									<input type="password" class="form-control" name="phy_password"
+										placeholder="请输入物联账户密码">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-info">授权</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var imgUrl;
+			if (localStorage.getItem('str') == null) imgUrl = document.getElementById('imghead').getAttribute('src');
+			else imgUrl = JSON.parse(localStorage.getItem('str'));
+			var myname = JSON.parse(localStorage.getItem('myname'));
+			var paddingstyle = JSON.parse(localStorage.getItem('paddingstyle'));
+			var containerstyle = JSON.parse(localStorage.getItem('containerstyle'));
+			document.getElementById("exc2").innerHTML = "欢迎你, " + myname;
+			var img = document.getElementById('imghead');
+			if (JSON.parse(localStorage.getItem('cut')) == true) {
+				img.setAttribute('style', "object-fit:cover;width:21px;border-radius:25%");
+			}
+			img.setAttribute('src', imgUrl);
+			document.getElementById('exc4').setAttribute('style', paddingstyle);
+			document.getElementById('exc5').setAttribute('style', containerstyle);
+		</script>
+		<script src="./sources/index.js"></script>
+		<!-- end js include path -->
+
+		<!-- datatable -->
+		<!-- <script src="../themes/mobile/assets/js/iscroll/iscroll.js"></script> -->
+		<!-- <script src="../themes/mobile/view/index/index.js"></script> -->
+		<script>
+			window.BIT_THEME = '../themes/mobile';
+			window.BIT_ROOT = '/home/tjuis/td_school_1';
+			window.BIT_UPLOAD_URL = '../upload';
+		</script>
+		<script src="./sources/runtime.d7724.js"></script>
+		<script src="./sources/a5745.8b56e.js"></script>
+		<script src="./sources/07d80.6d54f.js"></script>
+		<script src="./sources/mindex.81646.js"></script>
+
+	</body>
+
+</html>

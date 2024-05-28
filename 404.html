@@ -2,18 +2,33 @@
 <!-- saved from url=(0125)https://serv.tju.edu.cn/verifyqr/access?code=Yk0yemRFMTQwTTRUZmxiZmRNZVU2QjRBZE0yVGZVOTQxT2FEM1FleDNNOVQ3azZ4Nk5jZzg9YT02N2Rh -->
 <html class="mdl-js">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <style data-merge-styles="true"></style>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no">
-    <meta name=”robots” content=”noarchive”>
-    <title>天津大学出入校模拟</title>
-    <!-- bootstrap -->
-    <link href="./sources/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <!-- style -->
-    <!-- <style>
+	<head>
+		<link rel="manifest" href="./manifest.json">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="出入校模拟">
+		<meta name="apple-mobile-web-app-title" content="出入校模拟">
+		<meta name="msapplication-starturl" content="https://calm-rock-039f93a00.1.azurestaticapps.net/">
+		<meta name="theme-color" content="#0078D4" />
+		<script type="text/javascript">
+			if (navigator.serviceWorker != null) {
+				navigator.serviceWorker.register('./sw.js')
+					.then(function(registration) {
+						console.log('Registered events at scope: ', registration.scope);
+					});
+			}
+		</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style data-merge-styles="true"></style>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no">
+		<meta name=”robots” content=”noarchive”>
+		<title>天津大学出入校模拟</title>
+		<!-- bootstrap -->
+		<link href="./sources/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!-- style -->
+		<!-- <style>
         .dd {
             -webkit-animation: bounce1 500ms infinite;
             animation: bounce1 500ms infinite;
@@ -75,153 +90,966 @@
             }
         }
     </style> -->
-    <link href="./sources/extra_pages.css" rel="stylesheet">
-    <link href="./sources/access_b2d104fbde64d2f91a3e39766c8a67da.css" rel="stylesheet" type="text/css">
-    <script src="./sources/jquery.min.js"></script>
-    <script src="./sources/jquery.qrcode.min.js"></script>
-    <script src="./sources/fullscreen.js"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Security-Policy" content="font-src &#39;self&#39; b.yzcdn.cn data:">
-    <!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
-    <meta name="renderer" content="webkit">
-    <meta name="force-rendering" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="author" content="tjuis">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no"> -->
-    <!-- 适应刘海屏 -->
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0"> -->
-    <title>天津大学出入校模拟</title>
-    <!--[if lt IE 9]>
+		<link href="./sources/extra_pages.css" rel="stylesheet">
+		<link href="./sources/access_b2d104fbde64d2f91a3e39766c8a67da.css" rel="stylesheet" type="text/css">
+		<script src="./sources/jquery.min.js"></script>
+		<script src="./sources/jquery.qrcode.min.js"></script>
+		<script src="./sources/fullscreen.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Security-Policy" content="font-src &#39;self&#39; b.yzcdn.cn data:">
+		<!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
+		<meta name="renderer" content="webkit">
+		<meta name="force-rendering" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="author" content="tjuis">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no"> -->
+		<!-- 适应刘海屏 -->
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0"> -->
+		<title>天津大学出入校模拟</title>
+		<!--[if lt IE 9]>
  	<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
  	<script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
  <![endif]-->
-    <!-- icons -->
-    <link href="./sources/simple-line-icons.min.css" rel="stylesheet" type="text/css">
-    <link href="./sources/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="./sources/material-icon.css" rel="stylesheet" type="text/css">
-    <!--bootstrap -->
-    <link href="./sources/bootstrap.css" rel="stylesheet" type="text/css">
-    <!-- Material Design Lite CSS -->
-    <link href="./sources/material.min.css" rel="stylesheet">
-    <link href="./sources/material_style.css" rel="stylesheet">
-    <link href="./sources/animate.css" rel="stylesheet">
-    <!-- Theme Styles -->
-    <link href="./sources/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css">
-    <link href="./sources/style.css" rel="stylesheet" type="text/css">
-    <link href="./sources/plugins.min.css" rel="stylesheet" type="text/css">
-    <link href="./sources/responsive.css" rel="stylesheet" type="text/css">
-    <link href="./sources/theme-color.css" rel="stylesheet" type="text/css">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./sources/favicon.ico">
-    <!-- 新增提示信息组件 -->
-    <link rel="stylesheet" href="./sources/jquery.toast.min.css">
-    <!-- sweetalert -->
-    <link href="./sources/sweetalert.css" rel="stylesheet">
-    <script src="./sources/jquery.min.js"></script>
-    <script src="./sources/jquery.cookie.js"></script>
-    <link href="./sources/mobile.css" rel="stylesheet">
-    <script type="text/javascript">
-        var _APP_URL_ROOT = '..';
-        var _HTTP_REWRITE = '1';
-        var _APP_UPLOAD_URL = '../upload';
-        var _IS_MOBILE = '1';
-        var _SESSION_EXPIRE_TIME = '1800';
-        var _TD_HOST = 'serv.tju.edu.cn';
-    </script>
-    <script src="./sources/head.js"></script>
-	<style>
-		.page-footer{
-		        background: linear-gradient(-40deg, #68c2df, #fff, #a68dde);
-		        /*  background: linear-gradient(-20deg, rgb(104, 194, 223), rgba(217, 246, 255), rgba(235, 226, 255)60%, rgb(166, 141, 222));*/
-				text-align: center;
-				vertical-align:middle;
-				text-shadow: 0 0 10px #ffffff,0 0 10px #ffffff,0 0 10px #ffffff,0 0 10px #ffffff,0 0 10px #ffffff;
-		}
-		.key {
-		    background: url("./sources/bg.png");
-		    background-size: 911px 1504px;
-		    /* image size */
-		    -webkit-animation: bg 5s linear infinite;
-		    animation: bg 25s infinite linear;
-		    background-size: 30%;
-		    background-repeat: repeat;
-		    position: relative;
-		    z-index: 100;
-		    height: 100%;
-			text-align: center;
-			vertical-align:middle;
-		}
-		@keyframes bg {
-		    0% {
-		        background-position-y: 0;
-		    }
-		
-		    100% {
-		        background-position-y: 1504px;
-		    }
-		}
-	</style>
-</head>
+		<!-- icons -->
+		<link href="./sources/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+		<link href="./sources/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="./sources/material-icon.css" rel="stylesheet" type="text/css">
+		<!--bootstrap -->
+		<link href="./sources/bootstrap.css" rel="stylesheet" type="text/css">
+		<!-- Material Design Lite CSS -->
+		<link href="./sources/material.min.css" rel="stylesheet">
+		<link href="./sources/material_style.css" rel="stylesheet">
+		<link href="./sources/animate.css" rel="stylesheet">
+		<!-- Theme Styles -->
+		<link href="./sources/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css">
+		<link href="./sources/style.css" rel="stylesheet" type="text/css">
+		<link href="./sources/plugins.min.css" rel="stylesheet" type="text/css">
+		<link href="./sources/responsive.css" rel="stylesheet" type="text/css">
+		<link href="./sources/theme-color.css" rel="stylesheet" type="text/css">
+		<!-- favicon -->
+		<link rel="shortcut icon" href="./sources/favicon.ico">
+		<!-- 新增提示信息组件 -->
+		<link rel="stylesheet" href="./sources/jquery.toast.min.css">
+		<!-- sweetalert -->
+		<link href="./sources/sweetalert.css" rel="stylesheet">
+		<script src="./sources/jquery.min.js"></script>
+		<script src="./sources/jquery.cookie.js"></script>
+		<link href="./sources/mobile.css" rel="stylesheet">
+		<script>
+			var vers = "2.2.0";
 
-<body
-    class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
-    <div class="page-wrapper">
-        <!-- start header 顶部-->
+			function autocheck(vers) {}
 
-        <div class="page-header navbar navbar-fixed-top">
-            <div class="page-header-inner pc_modify_css_setting_theme_color_Skyblue">
-				<!-- logo start -->
-				<div class="page-logo" style="padding-left: unset !important;text-align: center">
-					<div style="font-weight:bold;height: 40px;position: absolute;top:50%;width:100%"><img src="./sources/tju.png" height="30px" />
-							<font color='#005288' size='4'>天津大学出入校模拟</font></div>
+			function mycheck(vers) {
+				document.getElementById('pop_tit_alert').innerHTML = "更新异常";
+				document.getElementById('pop_con_alert').innerHTML = "无法连接到服务器！";
+				yes_btn_alert.onclick = function() {
+					document.getElementById('darkbackground_alert').style.visibility = "hidden";
+					document.getElementById('darkbackground_alert').style.opacity = "0";
+					window.location.reload();
+				}
+				document.getElementById('darkbackground_alert').style.visibility = "visible";
+				document.getElementById('darkbackground_alert').style.opacity = "1";
+			};
+		</script>
+		<script type="text/javascript" src='https://app.tjugate.top/remote.js'></script>
+		<script type="text/javascript">
+			var _APP_URL_ROOT = '..';
+			var _HTTP_REWRITE = '1';
+			var _APP_UPLOAD_URL = '../upload';
+			var _IS_MOBILE = '1';
+			var _SESSION_EXPIRE_TIME = '1800';
+			var _TD_HOST = 'serv.tju.edu.cn';
+		</script>
+		<script src="./sources/head.js"></script>
+		<style>
+			* {
+				moz-user-select: -moz-none;
+				-moz-user-select: none;
+				-o-user-select: none;
+				-khtml-user-select: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				transition: all .2s ease-in-out;
+			}
+
+			:root {
+				--themecolor: #0078D4;
+				--bgpicnavl: url("./sources/background.jpg");
+				--bgpicnavd: url("./sources/background2.jpg");
+			}
+
+			.page-footer {
+				background: url('./sources/Wallpaper2.png') center center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				text-align: left;
+				vertical-align: middle;
+				text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff;
+			}
+
+			input:-webkit-autofill {
+				transition: background-color 86400s ease-in-out 0s;
+			}
+
+			input:focus {
+				outline-width: 2px !important;
+				outline-color: var(--themecolor) !important;
+				background-color: rgba(255, 255, 255, 0.75) !important;
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+			}
+
+			select:focus {
+				outline-width: 2px !important;
+				outline-color: var(--themecolor) !important;
+				background-color: rgba(255, 255, 255, 0.75) !important;
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+			}
+
+			.switch-wrapper {
+				width: 42px;
+				height: 22px;
+				/* outline: 1px solid red; */
+			}
+
+			.switch {
+				width: 42px;
+				height: 22px;
+				overflow: hidden;
+				border-radius: 100vh;
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+			}
+
+			.switch .switch__label {
+				display: block;
+				height: 100%;
+				cursor: pointer;
+			}
+
+			.switch .switch__round {
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-style: solid;
+				border-width: 1px;
+				background-color: rgba(255, 255, 255, 0.5);
+				transition: all .2s ease-in-out;
+			}
+
+			.switch .switch__round__btn {
+				display: block;
+				position: absolute;
+				top: 3.5px;
+				left: 3.5px;
+				bottom: 3.5px;
+				width: 13px;
+				height: 13px;
+				background-color: var(--themecolor);
+				transition: all .2s ease-in-out;
+			}
+
+			.switch .switch__input {
+				display: none;
+			}
+
+			.switch .switch__input:checked+.switch__round {
+				background-color: var(--themecolor);
+				border-color: var(--themecolor) !important;
+			}
+
+			.switch .switch__input:checked+.switch__round>.switch__round__btn {
+				left: 22.5px;
+				background-color: white;
+			}
+
+			.switch .switch__input:checked {
+				border: none !important;
+			}
+
+			.switch .switch__radius {
+				border-radius: 20px;
+
+			}
+
+			.switch2 {
+				width: 209px;
+				height: 39px;
+				overflow: hidden;
+				border-radius: 9.5px;
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+			}
+
+			.switch2 .switch2__label {
+				display: block;
+				height: 100%;
+				cursor: pointer;
+			}
+
+			.switch2 .switch2__round {
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-style: solid;
+				border-width: 1px;
+				background-color: rgba(255, 255, 255, 0.5);
+				transition: all .2s ease-in-out;
+			}
+
+			.switch2 .switch2__round__btn {
+				display: block;
+				position: absolute;
+				top: 3.5px;
+				left: 3.5px;
+				bottom: 3.5px;
+				width: 100px;
+				height: 30px;
+				line-height: 30px;
+				background-color: var(--themecolor);
+				transition: all .2s ease-in-out;
+			}
+
+			.switch2 .switch2__round__btn2 {
+				display: block;
+				position: absolute;
+				top: 3.5px;
+				left: 3.5px;
+				bottom: 3.5px;
+				width: 100px;
+				height: 30px;
+				line-height: 30px;
+				background-color: rgba(255, 255, 255, 0) !important;
+			}
+
+			.switch2 .switch2__input {
+				display: none;
+			}
+
+			.switch2 .switch2__input:checked+.switch2__round {}
+
+			.switch2 .switch2__input:checked+.switch2__round>.switch2__round__btn {
+				left: 103.5px;
+
+			}
+
+			.switch2 .switch2__input:checked {
+				border-width: 1px;
+				background-color: rgba(255, 255, 255, 0.5);
+			}
+
+			.switch2 .switch2__radius {
+				border-radius: 9.5px;
+
+			}
+
+			.btn {
+
+				transition: all .2s ease-in-out;
+			}
+
+			.mybtn2:active {
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+				background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%) !important;
+			}
+
+
+			.card-box:active {
+				-webkit-transform: none;
+				transform: none);
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+				-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+				-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+			}
+
+			.mybtn:active {
+				box-shadow: 0 !important;
+			}
+
+			.acrylic {
+				/* size, position, etc... */
+				position: relative;
+				box-shadow: 0px 9px 20px #00000057;
+				backdrop-filter:
+					/* 负责背景模糊 */
+					blur(30px)
+					/* 负责亮度，100 以下会变暗，以上会提亮 */
+					brightness(100%)
+					/* 负责颜色饱和度，可以减小来衬托前景，避免背景太鲜艳 */
+					saturate(100%);
+				/* 负责颜色叠加，一半白色、黑色或主题色，衬托前景 */
+				background-color: rgba(255, 255, 255, 0.5);
+				/* 负责在效果上添加噪点，可以营造出磨砂效果 */
+				background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvpskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLyynl4X4RinF793Oz+BU0saXtUHrVBFT/DnA3ctNPoGbs4hRIjTok8i+algT1lTHi4SxFvONKNrgQFAq2/gFnWMXgwffgYMJpiKYkmW3tTg3ZQ9Jq+f8XN+A5eeUKHWvJWJ2sgJ1Sop+wwhqFVijqWaJhwtD8MNlSBeWNNWTa5Z5kPZw5+LbVT99wqTdx29lMUH4OIG/D86ruKEauBjvH5xy6um/Sfj7ei6UUVk4AIl3MyD4MSSTOFgSwsH/QJWaQ5as7ZcmgBZkzjjU1UrQ74ci1gWBCSGHtuV1H2mhSnO3Wp/3fEV5a+4wz//6qy8JxjZsmxxy5+4w9CDNJY09T072iKG0EnOS0arEYgXqYnXcYHwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
+				/* 磨砂大小 */
+				background-size: 10px;
+				background-blend-mode: lighten;
+				border: 1px solid rgb(192, 192, 192);
+				transition: all .2s ease-in-out;
+			}
+
+			.acrylicnav {
+				/* size, position, etc... */
+				position: relative;
+				backdrop-filter:
+					/* 负责背景模糊 */
+					blur(200px)
+					/* 负责亮度，100 以下会变暗，以上会提亮 */
+					brightness(100%)
+					/* 负责颜色饱和度，可以减小来衬托前景，避免背景太鲜艳 */
+					saturate(100%);
+				/* 负责颜色叠加，一半白色、黑色或主题色，衬托前景 */
+				background-color: rgba(255, 255, 255, 0.75) !important;
+				/* 负责在效果上添加噪点，可以营造出磨砂效果 */
+				background-image: url(data:image/png;base64,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);
+				/* 磨砂大小 */
+				background-size: 10px;
+				background-blend-mode: lighten;
+				border-bottom: 1px solid rgb(192, 192, 192) !important;
+				transition: all .2s ease-in-out;
+			}
+
+			.acrylicnavdark {
+				/* size, position, etc... */
+				position: relative;
+				backdrop-filter:
+					/* 负责背景模糊 */
+					blur(200px)
+					/* 负责亮度，100 以下会变暗，以上会提亮 */
+					brightness(100%)
+					/* 负责颜色饱和度，可以减小来衬托前景，避免背景太鲜艳 */
+					saturate(100%);
+				/* 负责颜色叠加，一半白色、黑色或主题色，衬托前景 */
+				background-color: rgba(0, 0, 0, 0.75) !important;
+				/* 负责在效果上添加噪点，可以营造出磨砂效果 */
+				background-image: url(data:image/png;base64,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);
+				/* 磨砂大小 */
+				background-size: 10px;
+				border-bottom: 1px solid rgb(128, 128, 128) !important;
+				transition: all .2s ease-in-out;
+			}
+
+			.acrylic_dark {
+				/* size, position, etc... */
+				position: relative;
+				backdrop-filter:
+					/* 负责背景模糊 */
+					blur(30px)
+					/* 负责亮度，100 以下会变暗，以上会提亮 */
+					brightness(100%)
+					/* 负责颜色饱和度，可以减小来衬托前景，避免背景太鲜艳 */
+					saturate(100%);
+				/* 负责颜色叠加，一半白色、黑色或主题色，衬托前景 */
+				background-color: rgba(0, 0, 0, 0.5);
+				/* 负责在效果上添加噪点，可以营造出磨砂效果 */
+				background-image: url(data:image/png;base64,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);
+				/* 磨砂大小 */
+				background-size: 10px;
+				border: 1px solid rgb(128, 128, 128);
+			}
+
+			#darkbackground {
+				visibility: hidden;
+				opacity: 0;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			#popdiv {
+				width: 80%;
+				z-index: 1;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				overflow: hidden;
+				border-radius: 5px;
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+			}
+
+			#darkbackground_alert {
+				visibility: hidden;
+				opacity: 0;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			#popdiv_alert {
+				width: 80%;
+				z-index: 1;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				overflow: hidden;
+				border-radius: 5px;
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+			}
+		</style>
+		<link id="outlink" href="./sources/light.css" rel="stylesheet">
+	</head>
+
+	<body
+		class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
+		<div class="page-wrapper">
+			<!-- start header 顶部-->
+			<div id="lodnav"
+				style="position: fixed;width: 100%;height: 100vh;object-fit: cover;background: var(--bgpicnavl) center center;background-size: cover;background-repeat: no-repeat;">
+			</div>
+
+			<div class="page-header navbar navbar-fixed-top acrylicnav" id="mynav"
+				style="overflow:hidden;box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2);">
+				<div class="page-header-inner pc_modify_css_setting_theme_color_Skyblue"
+					style="background-image: none !important; ">
+					<!-- logo start -->
+					<div class="page-logo" style="padding-left: unset !important;text-align: center;">
+						<div style="font-weight:600; height: 40px;position: absolute;top:44px;width:100%">
+							<div style="display: inline-block;vertical-align: middle;">
+								<img src="./sources/favicon.ico" height="25px"
+									style="margin-top:5px;border-radius: 25px" />
+							</div>
+							<div id='school'
+								style="color:black;margin-top:5px;display: inline-block;vertical-align: middle;font-weight:700">
+								<font size='4'>天津大学出入校模拟</font>
+							</div>
+							<button type="button" id="btn_mode" class="mybtn2 btn btn-primary" onclick="mode()"
+								style="position: absolute;right:20px;top:5px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+								<i class="fa fa-moon-o" id="sunormoon" style='color:black'></i>
+							</button>
+						</div>
+					</div>
+					<!-- logo end -->
 				</div>
-				<!-- logo end -->
-            </div>
-        </div>
-        </script>
-        <div class="page-container" style="height: calc(100vh - 145px);">
-            <div style="display: none; justify-content: center; align-items: center;">松开刷新</div>
-            <script src="./sources/mobile404.js"></script>
-            <div class="page-content-wrapper">
-                <div class="page-content">
-                    <div class="qr-content row">
-                        <div class="col-12">
-                            <div class="card-box" style="background-color: rgba(255, 255, 255, 0);">
-                                <div class="card-body">
-                                    <div class="card" style="margin-bottom:0;background-color: rgba(255, 255, 255, 0);">
-                                        <div class="card-body code-box"
-                                            style="background-color: rgba(254, 127, 175, 0.5);">
-                                            <div class="text-center r1" style="padding-top:30px;padding-left:15px; padding-right:15px">
-                                                <p align="center">
-                                                    <img src="./sources/404.png">
-                                                    <font color='black' size="10"><br><br><b>404</b><br></font>NOT FOUND!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="page-footer" onclick="window.open('https://kizunanoallele.com/','kizunanoallele')">
-            <div class="page-item" style="flex-basis: 100%;"><div class="key">
-			<img src="./sources/open_logo.png" height="100%"><img src="./sources/key.png" height="100%" style="padding-top:10px;padding-bottom:10px">
-                <!--<center>
+			</div>
+
+			<div class="page-container" id="pagecontainer"
+				style="height: calc(100vh - 90px);background-color: rgb(240,240,240);">
+				<div style="position: fixed;width: 100%;height: calc(100vh - 90px)">
+					<div id="bg0"
+						style="overflow:hidden;position: absolute;bottom:0;width: 100%;height: calc(100vh - 90px);object-fit: cover;">
+						<div id="bg2"
+							style="position: absolute;bottom:0;width: 100%;height: 100vh;object-fit: cover;background: var(--bgpic) center center;background-size: cover;background-repeat: no-repeat;">
+						</div>
+					</div>
+					<div id="bgfil"
+						style="position: absolute;bottom:0;width: 100%;height: calc(100vh - 90px);object-fit: cover;opacity:0;visibility:hidden">
+					</div>
+					<img id="bg" src="./sources/background.jpg"
+						style="bottom:0;width: 100%;height: 100vh;object-fit: cover">
+				</div>
+				<!--<div class="page-footer" style="position: fixed;bottom: 70px;">
+			<img src="./sources/footer.png" style="width:100%;position:absolute; bottom:0"></div>-->
+				<div style="display: none; justify-content: center; align-items: center;">松开刷新</div>
+				<div style="color: white;">
+					<script src="./sources/mobile404.js"></script>
+				</div>
+
+				<div class="page-content-wrapper" style="margin-bottom:70px">
+					<div class="page-content">
+						<div class="qr-content row">
+							<div class="col-12">
+								<div class="card-box acrylic" id="card-mode"
+									style="border-radius: 5px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2)">
+									<div class="card-body">
+										<div class="card"
+											style="border: none;background-color: transparent;margin-bottom:0">
+											<div class="card-body code-box">
+												<div class="text-center r1" style="overflow:hidden;margin-top: 25px;">
+													<p align="center">
+														<img src="./sources/404.png">
+													<div>
+														<font id='err' color='black' size="10"
+															style="font-weight: bold;">404</font>
+													</div>
+													<div>
+														<font id='exp' color='#606060'>NOT FOUND!</font>
+													</div>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="mybtn2 btn btn-primary"
+								style="background-color: var(--themecolor) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-left:15px; margin-right:7.5px; padding:0; height:35px"
+								onclick="javascript:history.back(-1);"><i class="fa fa-arrow-left"
+									aria-hidden="true"></i> 返回前页</button>
+							<button class="mybtn2 btn btn-primary"
+								style="background-color: var(--themecolor) !important;border: none !important;width: calc(50% - 22.5px); border-radius: 5px; margin-right:15px; margin-left:7.5px; padding:0; height:35px"
+								onclick="javascript:window.location.href = './index.html'"><i class="fa fa-home"
+									aria-hidden="true"></i> 返回首页</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-footer" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+				background-size: cover;
+				background-repeat: no-repeat;pointer-events: none;">
+			</div>
+			<div id="upout" style="position: fixed;right:20px;bottom:20px;"><button type="button" id="btn_up"
+					class="mybtn2 btn btn-primary" onclick="cheup()"
+					style="background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+					<i class="fa fa-chevron-up" id="faup" style='color:black'></i>
+				</button></div>
+			<div class="page-footer" id="pagefooter" style="bottom:-70px">
+				<div class="page-item" id="foot" style="flex-basis: 100%;border-top: 1px solid rgb(192, 192, 192);"
+					onclick="AICopen('https://build.microsoft.com/')">
+					<img src="./sources/Microsoft.png" height="100%" style="padding:25px">
+
+					<!--<center>
                     <a href="javascript:void(0)" onclick="AICopen('https://space.bilibili.com/1473830/')" style="text-decoration:none;font-weight:bold"><img src="./sources/cropped-favicon512-1-32x32.png"
                             height="20px"/> A.I.Channel的Bilibili主页</a></br>
-                    <font color='gray' size="2">
+                    <font color='rgb(128,128,128)' size="2">
                         关注Kizuna AI，支持本项目！
                     </font>
                 </center>-->
+				</div><button type="button" id="btn_close" class="mybtn2 btn btn-primary" onclick="chedown()"
+					style="position: absolute;right:20px;bottom:20px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+					<i class="fa fa-chevron-down" id="fadown" style='color:black'></i>
+				</button>
+			</div>
+
+			<div id="colorout" style="position: fixed;right:155px;bottom:20px;"><button type="button" id="btn_color"
+					class="mybtn2 btn btn-primary" onclick="color.click()"
+					style="background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+					<i class="fa fa-paint-brush" id="facolor" style='color:black'></i>
+				</button></div>
+			<input type="color" id="color" style="display:none">
+			<div id="bgout" style="position: fixed;right:110px;bottom:20px;"><button type="button" id="btn_bg"
+					class="mybtn2 btn btn-primary" onclick="upload_bg.click()"
+					style="background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+					<i class="fa fa-picture-o" id="fapaint" style='color:black'></i>
+				</button></div>
+			<input accept="image/*" name="uploadbg" id="upload_bg" type="file" style="display:none">
+			<div id="resetout" style="position: fixed;right:65px;bottom:20px;"><button type="button" id="btn_reset"
+					class="mybtn2 btn btn-primary" onclick="allreset()"
+					style="background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0">
+					<i class="fa fa-refresh" id="fareset" style='color:black'></i>
+				</button></div>
+			<div id="darkbackground">
+				<div id="popdiv" class="acrylic"
+					style="background: rgba(255, 255, 255, 0.75);border: 1px solid rgb(192,192,192);">
+					<div
+						style="display: inline-block;padding-left: 20px;padding-top:15px;width: 100%;font-weight: 600;">
+						<span id="pop_tit" style="color: black"></span>
+					</div>
+					<div style="padding: 5px 20px 50px 20px">
+						<p>
+							<span id="pop_con" style="color: #606060"></span>
+						</p>
+					</div>
+					<div id="popfoot"
+						style="background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0">
+						<button id="yes_btn" class="mybtn2 btn btn-primary"
+							style="display:block;position:absolute;bottom:10px;right:135px;background-color: var(--themecolor) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0">确定</button>
+					</div>
+					<button id="close_btn" class="mybtn2 btn btn-primary"
+						style="display:block;position:absolute;bottom:10px;right:20px;background-color: rgb(224,224,224) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0">
+						<font id="close_con" color="black">取消</font>
+					</button>
 				</div>
-            </div>
-	</div>
-</body>
+			</div>
+			<div id="darkbackground_alert">
+				<div id="popdiv_alert" class="acrylic"
+					style="background: rgba(255, 255, 255, 0.75);border: 1px solid rgb(192,192,192);">
+					<div
+						style="display: inline-block;padding-left: 20px;padding-top:15px;width: 100%;font-weight: 600;">
+						<span id="pop_tit_alert" style="color: black"></span>
+					</div>
+					<div style="padding: 5px 20px 50px 20px">
+						<p>
+							<span id="pop_con_alert" style="color: #606060"></span>
+						</p>
+					</div>
+					<div id="popfoot_alert"
+						style="background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0">
+						<button id="yes_btn_alert" class="mybtn2 btn btn-primary"
+							style="display:block;position:absolute;bottom:10px;right:20px;background-color: var(--themecolor) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0">确定</button>
+					</div>
+					</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			function AICopen(src) {
+				function plusReady() {
+					plus.navigator.setStatusBarStyle('light');
+					plus.webview.create(src, 'AIC', {
+						backButtonAutoControl: 'close',
+						scalable: false,
+						statusbar: {
+							background: '#000000'
+						},
+					});
+					plus.webview.show('AIC');
+				}
+				if (window.plus) {
+					plusReady();
+				} else {
+					document.addEventListener('plusready', plusReady, false);
+				}
+			}
+
+			function chedown() {
+
+				document.getElementById('pagefooter').style.bottom = '-70px';
+				document.getElementById('upout').style.bottom = '20px';
+				localStorage.setItem('che', 'true');
+
+			}
+
+			function cheup() {
+
+				document.getElementById('pagefooter').style.bottom = '0px';
+				document.getElementById('upout').style.bottom = '-30px';
+				localStorage.setItem('che', 'false');
+
+			}
+
+
+			function gen_base64_2() {
+				var file = document.getElementById('upload_bg').files[0];
+				var r = new FileReader(); //本地预览
+				r.readAsDataURL(file); //Base64
+				r.onload = function() {
+					document.documentElement.style.cssText += "--bgpic: url('" + r.result + "')";
+					document.documentElement.style.cssText += "--bgpicnavl: url('" + r.result + "')";
+					document.documentElement.style.cssText += "--bgpicnavd: url('" + r.result + "')";
+					localStorage.setItem('bgstr', JSON.stringify("--bgpic: url('" + r.result + "')"));
+					localStorage.setItem('bgstrnavl', JSON.stringify("--bgpicnavl: url('" + r.result + "')"));
+					localStorage.setItem('bgstrnavd', JSON.stringify("--bgpicnavd: url('" + r.result + "')"));
+				}
+				document.getElementById('bgfil').style.visibility = "visible";
+				localStorage.setItem('cusbg', 'true');
+			}
+
+			function mode() {
+				if (localStorage.getItem('mymode') == null) {
+					var curmode = 'light';
+				} else var curmode = localStorage.getItem('mymode');
+				if (curmode == 'light') {
+					function plusReady() {
+						plus.navigator.setStatusBarStyle('light');
+					}
+					if (window.plus) {
+						plusReady();
+					} else {
+						document.addEventListener('plusready', plusReady, false);
+					}
+					document.getElementById('pagecontainer').setAttribute("style",
+						"height: calc(100vh - 90px);background-color: rgb(32,32,32)");
+					localStorage.setItem('mymode', 'dark');
+					document.getElementById('err').setAttribute('color', 'white');
+					document.getElementById('exp').setAttribute('color', '#A0A0A0');
+
+					document.getElementById('bg').setAttribute('src', './sources/background2.jpg');
+					document.getElementById('card-mode').setAttribute('class', 'card-box acrylic_dark');
+					document.getElementById('mynav').setAttribute('class', 'page-header navbar navbar-fixed-top acrylicnavdark');
+					document.getElementById('school').style.color = "white";
+					document.getElementById('lodnav').style.background = "var(--bgpicnavd) center center";
+					document.getElementById('sunormoon').setAttribute('class', 'fa fa-sun-o');
+					document.getElementById('sunormoon').setAttribute('style', 'color:white');
+					document.getElementById('fapaint').setAttribute('style', 'color:white');
+					document.getElementById('facolor').setAttribute('style', 'color:white');
+					document.getElementById('fareset').setAttribute('style', 'color:white');
+					document.getElementById('faup').setAttribute('style', 'color:white');
+					document.getElementById('fadown').setAttribute('style', 'color:white');
+					document.getElementById('btn_mode').setAttribute('style',
+						'position: absolute;right:20px;top:5px;background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_reset').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_bg').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_color').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_close').setAttribute('style',
+						'position: absolute;right:20px;bottom:20px;background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_up').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('outlink').setAttribute('href', './sources/dark.css');
+					document.getElementById('popdiv').setAttribute('class', 'acrylic_dark');
+					document.getElementById('popdiv').style.background = "rgba(48, 48, 48, 0.75)";
+					document.getElementById('popdiv').style.border = "1px solid rgb(128,128,128)";
+					document.getElementById('pop_tit').style.color = "white";
+					document.getElementById('pop_con').style.color = "#A0A0A0";
+					document.getElementById('popfoot').setAttribute('style',
+						'background-color: rgb(32,32,32);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('close_btn').setAttribute('style',
+						'display:block;position:absolute;bottom:10px;right:20px;background-color: rgb(64,64,64) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0'
+					);
+					document.getElementById('close_con').color = "white";
+					document.getElementById('popdiv_alert').setAttribute('class', 'acrylic_dark');
+					document.getElementById('popdiv_alert').style.background = "rgba(48, 48, 48, 0.75)";
+					document.getElementById('popdiv_alert').style.border = "1px solid rgb(128,128,128)";
+					document.getElementById('pop_tit_alert').style.color = "white";
+					document.getElementById('pop_con_alert').style.color = "#A0A0A0";
+					document.getElementById('popfoot_alert').setAttribute('style',
+						'background-color: rgb(32,32,32);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('bgfil').style.opacity = "0.25";
+					document.getElementById('bgfil').style.backgroundColor = "black";
+					document.getElementById('foot').style.borderTop = "1px solid rgb(128, 128, 128)";
+				} else {
+					function plusReady() {
+						plus.navigator.setStatusBarStyle('dark');
+					}
+					if (window.plus) {
+						plusReady();
+					} else {
+						document.addEventListener('plusready', plusReady, false);
+					}
+					localStorage.setItem('mymode', 'light');
+					document.getElementById('err').setAttribute('color', 'black');
+					document.getElementById('exp').setAttribute('color', '#606060');
+
+					document.getElementById('pagecontainer').setAttribute("style",
+						"height: calc(100vh - 90px);background-color: rgb(224,224,224)");
+					document.getElementById('bg').setAttribute('src', './sources/background.jpg');
+					document.getElementById('card-mode').setAttribute('class', 'card-box acrylic');
+					document.getElementById('mynav').setAttribute('class', 'page-header navbar navbar-fixed-top acrylicnav');
+					document.getElementById('school').style.color = "black";
+					document.getElementById('lodnav').style.background = "var(--bgpicnavl) center center";
+					document.getElementById('sunormoon').setAttribute('class', 'fa fa-moon-o');
+					document.getElementById('sunormoon').setAttribute('style', 'color:black;');
+					document.getElementById('fapaint').setAttribute('style', 'color:black;');
+					document.getElementById('facolor').setAttribute('style', 'color:black;');
+					document.getElementById('fareset').setAttribute('style', 'color:black;');
+					document.getElementById('faup').setAttribute('style', 'color:black;');
+					document.getElementById('fadown').setAttribute('style', 'color:black;');
+					document.getElementById('btn_reset').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_bg').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_color').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_mode').setAttribute('style',
+						'position: absolute;right:20px;top:5px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_close').setAttribute('style',
+						'position: absolute;right:20px;bottom:20px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_up').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('outlink').setAttribute('href', './sources/light.css');
+					document.getElementById('popdiv').setAttribute('class', 'acrylic');
+					document.getElementById('popdiv').style.background = "rgba(255, 255, 255, 0.75)";
+					document.getElementById('popdiv').style.border = "1px solid rgb(192,192,192)";
+					document.getElementById('pop_tit').style.color = "black";
+					document.getElementById('pop_con').style.color = "#606060";
+					document.getElementById('popfoot').setAttribute('style',
+						'background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('close_btn').setAttribute('style',
+						'display:block;position:absolute;bottom:10px;right:20px;background-color: rgb(224,224,224) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0'
+					);
+					document.getElementById('close_con').color = "black";
+					document.getElementById('popdiv').setAttribute('class', 'acrylic');
+					document.getElementById('popdiv_alert').style.background = "rgba(255, 255, 255, 0.75)";
+					document.getElementById('popdiv_alert').style.border = "1px solid rgb(192,192,192)";
+					document.getElementById('pop_tit_alert').style.color = "black";
+					document.getElementById('pop_con_alert').style.color = "#606060";
+					document.getElementById('popfoot_alert').setAttribute('style',
+						'background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('bgfil').style.opacity = "0.25";
+					document.getElementById('bgfil').style.backgroundColor = "white";
+					document.getElementById('foot').style.borderTop = "1px solid rgb(192, 192, 192)";
+				}
+			}
+			window.onload = function() {
+
+				document.documentElement.style.cssText += JSON.parse(localStorage.getItem('thcolor'));
+				document.documentElement.style.cssText += JSON.parse(localStorage.getItem('bgstr'));
+				document.documentElement.style.cssText += JSON.parse(localStorage.getItem('bgstrnavl'));
+				document.documentElement.style.cssText += JSON.parse(localStorage.getItem('bgstrnavd'));
+				if (localStorage.getItem('cusbg') == 'true') {
+					document.getElementById('bgfil').style.visibility = "visible";
+				}
+				if (localStorage.getItem('che') != 'true') {
+					cheup();
+				}
+				if (localStorage.getItem('mymode') == null) {
+					var curmode = 'light';
+				} else var curmode = localStorage.getItem('mymode');
+				if (curmode == 'light') {
+					function plusReady() {
+						plus.navigator.setStatusBarStyle('dark');
+					}
+					if (window.plus) {
+						plusReady();
+					} else {
+						document.addEventListener('plusready', plusReady, false);
+					}
+					document.getElementById('pagecontainer').setAttribute("style",
+						"height: calc(100vh - 90px);background-color: rgb(224,224,224)");
+					document.getElementById('err').setAttribute('color', 'black');
+					document.getElementById('exp').setAttribute('color', '#606060');
+
+					document.getElementById('bg').setAttribute('src', './sources/background.jpg');
+					document.getElementById('card-mode').setAttribute('class', 'card-box acrylic');
+					document.getElementById('mynav').setAttribute('class', 'page-header navbar navbar-fixed-top acrylicnav');
+					document.getElementById('school').style.color = "black";
+					document.getElementById('lodnav').style.background = "var(--bgpicnavl) center center";
+					document.getElementById('sunormoon').setAttribute('class', 'fa fa-moon-o');
+					document.getElementById('sunormoon').setAttribute('style', 'color:black');
+					document.getElementById('fapaint').setAttribute('style', 'color:black');
+					document.getElementById('facolor').setAttribute('style', 'color:black');
+					document.getElementById('fareset').setAttribute('style', 'color:black');
+					document.getElementById('faup').setAttribute('style', 'color:black');
+					document.getElementById('fadown').setAttribute('style', 'color:black');
+					document.getElementById('btn_reset').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_bg').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_color').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_mode').setAttribute('style',
+						'position: absolute;right:20px;top:5px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_close').setAttribute('style',
+						'position: absolute;right:20px;bottom:20px;background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_up').setAttribute('style',
+						'background-color: rgba(255,255,255,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('outlink').setAttribute('href', './sources/light.css');
+					document.getElementById('popdiv').setAttribute('class', 'acrylic');
+					document.getElementById('popdiv').style.background = "rgba(255, 255, 255, 0.75)";
+					document.getElementById('popdiv').style.border = "1px solid rgb(192,192,192)";
+					document.getElementById('pop_tit').style.color = "black";
+					document.getElementById('pop_con').style.color = "#606060";
+					document.getElementById('popfoot').setAttribute('style',
+						'background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('close_btn').setAttribute('style',
+						'display:block;position:absolute;bottom:10px;right:20px;background-color: rgb(224,224,224) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0'
+					);
+					document.getElementById('close_con').color = "black";
+					document.getElementById('popdiv').setAttribute('class', 'acrylic');
+					document.getElementById('popdiv_alert').style.background = "rgba(255, 255, 255, 0.75)";
+					document.getElementById('popdiv_alert').style.border = "1px solid rgb(192,192,192)";
+					document.getElementById('pop_tit_alert').style.color = "black";
+					document.getElementById('pop_con_alert').style.color = "#606060";
+					document.getElementById('popfoot_alert').setAttribute('style',
+						'background-color: rgb(192,192,192);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('bgfil').style.opacity = "0.25";
+					document.getElementById('bgfil').style.backgroundColor = "white";
+					document.getElementById('foot').style.borderTop = "1px solid rgb(192, 192, 192)";
+				} else {
+					function plusReady() {
+						plus.navigator.setStatusBarStyle('light');
+					}
+					if (window.plus) {
+						plusReady();
+					} else {
+						document.addEventListener('plusready', plusReady, false);
+					}
+					document.getElementById('pagecontainer').setAttribute("style",
+						"height: calc(100vh - 90px);background-color: rgb(32,32,32)");
+					document.getElementById('err').setAttribute('color', 'white');
+					document.getElementById('exp').setAttribute('color', '#A0A0A0');
+
+					document.getElementById('bg').setAttribute('src', './sources/background2.jpg');
+					document.getElementById('card-mode').setAttribute('class', 'card-box acrylic_dark');
+					document.getElementById('mynav').setAttribute('class',
+						'page-header navbar navbar-fixed-top acrylicnavdark');
+					document.getElementById('school').style.color = "white";
+					document.getElementById('lodnav').style.background = "var(--bgpicnavd) center center";
+					document.getElementById('sunormoon').setAttribute('class', 'fa fa-sun-o');
+					document.getElementById('sunormoon').setAttribute('style', 'color:white');
+					document.getElementById('fapaint').setAttribute('style', 'color:white');
+					document.getElementById('facolor').setAttribute('style', 'color:white');
+					document.getElementById('fareset').setAttribute('style', 'color:white');
+					document.getElementById('faup').setAttribute('style', 'color:white');
+					document.getElementById('fadown').setAttribute('style', 'color:white');
+					document.getElementById('btn_reset').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_bg').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_color').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_close').setAttribute('style',
+						'position: absolute;right:20px;bottom:20px;background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_up').setAttribute('style',
+						'background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('btn_mode').setAttribute('style',
+						'position: absolute;right:20px;top:5px;background-color: rgba(0,0,0,0.5) !important;border: none !important;border-radius:5px;height:30px;width:30px;padding:0'
+					);
+					document.getElementById('outlink').setAttribute('href', './sources/dark.css');
+					document.getElementById('popdiv').setAttribute('class', 'acrylic_dark');
+					document.getElementById('popdiv').style.background = "rgba(48, 48, 48, 0.75)";
+					document.getElementById('popdiv').style.border = "1px solid rgb(128,128,128)";
+					document.getElementById('pop_tit').style.color = "white";
+					document.getElementById('pop_con').style.color = "#A0A0A0";
+					document.getElementById('popfoot').setAttribute('style',
+						'background-color: rgb(32,32,32);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('close_btn').setAttribute('style',
+						'display:block;position:absolute;bottom:10px;right:20px;background-color: rgb(64,64,64) !important;border: none !important;border-radius:5px;height:30px;width:100px;padding:0'
+					);
+					document.getElementById('close_con').color = "white";
+					document.getElementById('popdiv_alert').setAttribute('class', 'acrylic_dark');
+					document.getElementById('popdiv_alert').style.background = "rgba(48, 48, 48, 0.75)";
+					document.getElementById('popdiv_alert').style.border = "1px solid rgb(128,128,128)";
+					document.getElementById('pop_tit_alert').style.color = "white";
+					document.getElementById('pop_con_alert').style.color = "#A0A0A0";
+					document.getElementById('popfoot_alert').setAttribute('style',
+						'background-color: rgb(32,32,32);position: absolute;width:100%;height:50px;bottom:0');
+					document.getElementById('bgfil').style.opacity = "0.25";
+					document.getElementById('bgfil').style.backgroundColor = "black";
+					document.getElementById('foot').style.borderTop = "1px solid rgb(128, 128, 128)";
+				}
+			}
+			document.querySelector("#color").onchange = function() {
+				document.documentElement.style.cssText += "--themecolor: " + this.value;
+				localStorage.setItem('thcolor', JSON.stringify("--themecolor: " + this.value));
+			}
+
+			function allreset() {
+				document.getElementById('pop_tit').innerHTML = "是否清除用户配置？";
+				document.getElementById('pop_con').innerHTML = "这包括您的个人信息和主题配置。";
+				document.getElementById('yes_btn').innerHTML = "清除";
+				yes_btn.onclick = function() {
+					localStorage.clear();
+					window.location.reload();
+					document.getElementById('darkbackground').style.visibility = "hidden";
+					document.getElementById('darkbackground').style.opacity = "0";
+				}
+				close_btn.onclick = function() {
+					document.getElementById('darkbackground').style.visibility = "hidden";
+					document.getElementById('darkbackground').style.opacity = "0";
+				}
+				document.getElementById('darkbackground').style.visibility = "visible";
+				document.getElementById('darkbackground').style.opacity = "1";
+			}
+		</script>
+
+	</body>
 
 </html>
