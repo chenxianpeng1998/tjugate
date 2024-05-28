@@ -564,7 +564,7 @@
 			<img src="./sources/footer.png" style="width:100%;position:absolute; bottom:0"></div>-->
 				<div style="display: none; justify-content: center; align-items: center;">松开刷新</div>
 				<div style="color: white;">
-					<script src="./sources/mobilelite.js"></script>
+					<script src="./sources/mobileindex.js"></script>
 				</div>
 
 				<div class="page-content-wrapper" style="margin-bottom:70px">
@@ -840,6 +840,7 @@
 			</div>
 		</div>
 		<script>
+			window.onload = autocheck(vers);
 
 			function compareVersion(v1, v2) {
 				v1 = v1.split('.')
